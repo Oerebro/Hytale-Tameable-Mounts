@@ -27,51 +27,14 @@ public class TamingSystem extends EntityTickingSystem<EntityStore> {
     private static final HytaleLogger LOGGER = ChocoboPlugin.getInstance().getLogger();
     private static final ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
 
-    //Define all mount role names here
-    public enum MountRole {
-        CHOCOBO,
-        PLUGIN_MOUNT;
 
-        private static final Set<String> NAMES =
-                Arrays.stream(values())
-                        .map(Enum::name)
-                        .collect(Collectors.toUnmodifiableSet());
-
-        public static boolean contains(String roleName) {
-            return roleName != null && NAMES.contains(roleName.toUpperCase());
-        }
-    }
 
 
     public TamingSystem(){
         LOGGER.atInfo().log("Init TamingSystem");
     }
 
-    //adds TameableMountComponent to NPCMount entities when they are added
-    public static class OnAdd extends RefSystem<EntityStore> {
-        @Override
-        public Query<EntityStore> getQuery() {
-            return NPCEntity.getComponentType();
-        }
 
-        @Override
-        public void onEntityAdded(
-                @Nonnull Ref<EntityStore> ref, @Nonnull AddReason reason, @Nonnull Store<EntityStore> store, @Nonnull CommandBuffer<EntityStore> commandBuffer
-        ) {
-            if(commandBuffer.getComponent(ref,TameableMountComponent.getComponentType()) != null) return;
-
-            if(isMount(ref,commandBuffer)){
-                System.out.println("Mount found.");
-                MountInitSystem.requestMountInit(ref,store);
-            }
-        }
-
-        @Override
-        public void onEntityRemove(
-                @Nonnull Ref<EntityStore> ref, @Nonnull RemoveReason reason, @Nonnull Store<EntityStore> store, @Nonnull CommandBuffer<EntityStore> commandBuffer
-        ) {
-        }
-    }
 
 
     @Override
@@ -125,28 +88,9 @@ public class TamingSystem extends EntityTickingSystem<EntityStore> {
         //return Query.and(NPCEntity.getComponentType());
     }
 
-    private static boolean isMount(Ref<EntityStore> ref, CommandBuffer<EntityStore> commandBuffer) {
-        NPCEntity npc = commandBuffer.getComponent(ref, NPCEntity.getComponentType());
-        return npc != null && MountRole.contains(npc.getRoleName());
-    }
 
 
-    public static void loadOrCreateMount(Ref<EntityStore> ref, Store<EntityStore> store){
-        /*
-        TameableMountComponent mountComponent =
-                (ChocoboPlugin.getSaveEntityDataSystem().isKnownMount(Objects.requireNonNull(store.getComponent(ref, UUIDComponent.getComponentType())))) ?
-                        SaveEntityDataSystem.loadMountData(Objects.requireNonNull(store.getComponent(ref, UUIDComponent.getComponentType()))) :
-                        new TameableMountComponent();
 
-         */
-        TameableMountComponent mountComponent = new TameableMountComponent();
 
-        //get entity from the store
-        Holder<EntityStore> holder = store.removeEntity(ref,RemoveReason.UNLOAD);
-        holder.tryRemoveComponent(TameableMountComponent.getComponentType());
-        holder.addComponent(TameableMountComponent.getComponentType(),mountComponent);
-        ref = store.addEntity(holder,AddReason.LOAD);
-        SaveEntityDataSystem.saveThisMount(ref,store);
-    }
 
 }

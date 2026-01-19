@@ -6,12 +6,15 @@ import com.hypixel.hytale.codec.builder.BuilderCodec;
 import com.hypixel.hytale.component.Component;
 import com.hypixel.hytale.component.ComponentType;
 import com.hypixel.hytale.component.NonSerialized;
+import com.hypixel.hytale.protocol.ModelAttachment;
 import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import com.hypixel.hytale.server.npc.corecomponents.audiovisual.ActionModelAttachment;
 import org.mounts.plugin.ChocoboPlugin;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.awt.*;
 
 public class TameableMountComponent implements Component<EntityStore> {
     public static final BuilderCodec<TameableMountComponent> CODEC =
@@ -35,6 +38,9 @@ public class TameableMountComponent implements Component<EntityStore> {
 
     private boolean isTame = false;
     private int tamingProgress = 0;
+    private ModelAttachment saddle = null;
+    private ModelAttachment barding = null;
+    private Color textureColor = Color.YELLOW;
 
     public TameableMountComponent(){
     }
@@ -48,6 +54,9 @@ public class TameableMountComponent implements Component<EntityStore> {
         this.isTame = other.isTame;
         //this.owner = other.owner;
         this.tamingProgress = other.tamingProgress;
+        this.saddle = other.saddle;
+        this.barding = other.barding;
+        this.textureColor = other.textureColor;
     }
 
     public void tame(PlayerRef player){

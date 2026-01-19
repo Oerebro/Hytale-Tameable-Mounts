@@ -36,8 +36,6 @@ public class ChocoboPlugin extends JavaPlugin {
     private ComponentType<EntityStore, TameableMountComponent> tameableMountComponentComponentType;
     private ComponentType<EntityStore, NPCMountComponent> mountComponentType;
     private ResourceType<EntityStore, MountInitSystem.MountInitQueue> mountInitQueueResourceType;
-    private static SaveEntityDataSystem saveEntityDataSystem;
-
     private final ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
 
     public ChocoboPlugin(@Nonnull JavaPluginInit init) {
@@ -48,51 +46,16 @@ public class ChocoboPlugin extends JavaPlugin {
     @Override
     protected void setup(){
         LOGGER.atInfo().log("Setting up plugin " + this.getName());
-        registerEvents();
-        registerCommands();
-        this.mountInitQueueResourceType = this.getEntityStoreRegistry().registerResource(MountInitSystem.MountInitQueue.class, MountInitSystem.MountInitQueue::new);
+
+        //components
         this.tameableMountComponentComponentType = this.getEntityStoreRegistry().registerComponent(TameableMountComponent.class, "Tameable", TameableMountComponent.CODEC);
-        this.getEntityStoreRegistry().registerSystem(saveEntityDataSystem = new SaveEntityDataSystem());
-        this.getEntityStoreRegistry().registerSystem(new MountInitSystem(mountInitQueueResourceType));
-    }
+        //resources
+        this.mountInitQueueResourceType = this.getEntityStoreRegistry().registerResource(MountInitSystem.MountInitQueue.class, MountInitSystem.MountInitQueue::new);
 
-    @Override
-    protected void start(){
-        registerSystems();
-
-        //load Mounts inititally
-        SaveEntityDataSystem.loadMounts();
-
-
-
-        scheduler.scheduleAtFixedRate(() -> {
-                    saveEntityDataSystem.saveMounts();
-        },
-        30,30,
-        TimeUnit.SECONDS);
-    }
-
-    @Override
-    protected  void shutdown(){
-        //saveEntityDataSystem.saveMounts();
-    }
-
-    private void registerEvents(){
+        //events
         this.getEventRegistry().registerGlobal(PlayerReadyEvent.class, RegisterPlayer::onPlayerReady);
-    }
-
-    private void registerCommands(){
+        //commands
         this.getCommandRegistry().registerCommand(new ExampleCommand(this.getName(), this.getManifest().getVersion().toString()));
-    }
-
-
-
-    private void registerSystems(){
-        //this handles the taming logic (ie. taming progress, wether to throw a player off if untamed etc.)
-        this.getEntityStoreRegistry().registerSystem(new TamingSystem());
-
-        //this handles applying the component to all entities
-        this.getEntityStoreRegistry().registerSystem(new TamingSystem.OnAdd());
     }
 
     //set a player reference and their world if none are set
@@ -106,8 +69,12 @@ public class ChocoboPlugin extends JavaPlugin {
 
     }
 
-    public static SaveEntityDataSystem getSaveEntityDataSystem(){
-        return saveEntityDataSystem;
+    @Override
+    public void start(){
+        //systems
+        this.getEntityStoreRegistry().registerSystem(new MountInitSystem(mountInitQueueResourceType));
+        this.getEntityStoreRegistry().registerSystem(new MountInitSystem.OnAdd());
+        this.getEntityStoreRegistry().registerSystem(new TamingSystem());
     }
 
     public ResourceType<EntityStore, MountInitSystem.MountInitQueue> getMountInitQueueResourceType() {
