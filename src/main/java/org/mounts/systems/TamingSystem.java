@@ -59,8 +59,6 @@ public class TamingSystem extends EntityTickingSystem<EntityStore> {
 
                 //TEMP: Increase the tamingProgress
                 Objects.requireNonNull(commandBuffer.getComponent(ref, TameableMountComponent.getComponentType())).addTameProgress(30);
-                //save the mount data (since for now, taming progress gets updated)
-                //SaveEntityDataSystem.saveThisMount(ref,commandBuffer);
                 System.out.println("Taming process: "+commandBuffer.getComponent(ref, TameableMountComponent.getComponentType()).getTamingProgress());
             }, 1, TimeUnit.SECONDS);
 
@@ -79,13 +77,9 @@ public class TamingSystem extends EntityTickingSystem<EntityStore> {
 
     @Nonnull
     @Override
-    // I absolutely HATE and DESPISE that i have to query NPCEntity instead of TameableMountComponent
-    // but the ChunkSavingSystem throws an error from my own component. its either not serializable or the archetype is somehow not correctly initialized.
-    // I get an indexoutofbounds error in public Holder<ECS_TYPE> copySerializableEntity(@Nonnull ComponentRegistry.Data<ECS_TYPE> data, int entityIndex, @Nonnull Holder<ECS_TYPE> target)
-    // so guess Ill have to live with this absolute dogwater of performance optimization :)
     public Query<EntityStore> getQuery() {
         return Query.and(TameableMountComponent.getComponentType());
-        //return Query.and(NPCEntity.getComponentType());
+
     }
 
 
