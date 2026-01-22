@@ -15,10 +15,15 @@ import com.hypixel.hytale.protocol.MountController;
 import com.hypixel.hytale.protocol.Vector3f;
 import com.hypixel.hytale.server.core.codec.ProtocolCodecs;
 import com.hypixel.hytale.server.core.entity.InteractionContext;
+import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.CooldownHandler;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.SimpleInstantInteraction;
+import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
+import com.hypixel.hytale.server.npc.entities.NPCEntity;
+
 import javax.annotation.Nonnull;
+import java.util.Objects;
 
 public class TameInteraction extends SimpleInstantInteraction {
     public static final BuilderCodec<TameInteraction> CODEC = BuilderCodec.builder(
@@ -49,11 +54,14 @@ public class TameInteraction extends SimpleInstantInteraction {
     @Override
     protected void firstRun(@Nonnull InteractionType type, @Nonnull InteractionContext context, @Nonnull CooldownHandler cooldownHandler) {
         Ref<EntityStore> target = context.getTargetEntity();
+        CommandBuffer<EntityStore> commandBuffer = context.getCommandBuffer();
+
+        //check if the player holds the correct item
         if (target == null) {
             context.getState().state = InteractionState.Failed;
         } else {
             Ref<EntityStore> self = context.getEntity();
-            CommandBuffer<EntityStore> commandBuffer = context.getCommandBuffer();
+
             MountedComponent mounted = commandBuffer.getComponent(self, MountedComponent.getComponentType());
             if (mounted != null) {
                 commandBuffer.removeComponent(self, MountedComponent.getComponentType());
@@ -68,4 +76,5 @@ public class TameInteraction extends SimpleInstantInteraction {
             }
         }
     }
+
 }
