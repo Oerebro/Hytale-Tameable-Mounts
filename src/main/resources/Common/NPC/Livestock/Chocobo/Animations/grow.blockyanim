@@ -1,0 +1,20 @@
+{
+  "formatVersion": 1,
+  "duration": 3,
+  "holdLastKeyframe": false,
+  "nodeAnimations": {
+    "root": {
+      "position": [],
+      "orientation": [],
+      "shapeStretch": [
+        {
+          "time": 0,
+          "delta": {"x": 1, "y": 1, "z": 1},
+          "interpolationType": "linear"
+        }
+      ],
+      "shapeVisible": [],
+      "shapeUvOffset": []
+    }
+  }
+}

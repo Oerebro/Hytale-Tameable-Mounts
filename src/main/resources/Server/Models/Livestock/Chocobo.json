@@ -1,0 +1,456 @@
+{
+  "Model": "NPC/Livestock/Chocobo/Models/Chocobo.blockymodel",
+  "Texture": "NPC/Livestock/Chocobo/Models/Chocobo.png",
+  "EyeHeight": 2.1,
+  "CrouchOffset": -0.5,
+  "MinScale": 1.8,
+  "MaxScale": 2.0,
+  "HitBox": {
+    "Max": { "X": 0.203125, "Y": 0.890625, "Z": 0.3046875 },
+    "Min": { "X": -0.203125, "Y": 0, "Z": -0.3046875 }
+  },
+  "PhysicsValues": { "Mass": 68 },
+  "DetailBoxes": {
+    "Head": [
+      {
+        "Offset": {
+          "X": 0,
+          "Y": 0.703125,
+          "Z": 0.1484375
+        },
+        "Box": {
+          "Max": {
+            "X": 0.171875,
+            "Y": 0.1875,
+            "Z": 0.328125
+          },
+          "Min": {
+            "X": -0.171875,
+            "Y": -0.1875,
+            "Z": -0.328125
+          }
+        }
+      }
+    ],
+    "Neck": [
+      {
+        "Offset": {
+          "X": 0,
+          "Y": 0.4765625,
+          "Z": 0.078125
+        },
+        "Box": {
+          "Max": {
+            "X": 0.171875,
+            "Y": 0.25,
+            "Z": 0.15625
+          },
+          "Min": {
+            "X": -0.171875,
+            "Y": -0.25,
+            "Z": -0.15625
+          }
+        }
+      }
+    ],
+    "Body": [
+      {
+        "Offset": {
+          "X": 0,
+          "Y": 0.2109375,
+          "Z": -0.0390625
+        },
+        "Box": {
+          "Max": {
+            "X": 0.1640625,
+            "Y": 0.359375,
+            "Z": 0.2578125
+          },
+          "Min": {
+            "X": -0.1640625,
+            "Y": -0.359375,
+            "Z": -0.2578125
+          }
+        }
+      }
+    ],
+    "Legs": [
+      {
+        "Offset": {
+          "X": 0,
+          "Y": -0.1328125,
+          "Z": 0.234375
+        },
+        "Box": {
+          "Max": {
+            "X": 0.1640625,
+            "Y": 0.265625,
+            "Z": 0.1640625
+          },
+          "Min": {
+            "X": -0.1640625,
+            "Y": -0.265625,
+            "Z": -0.1640625
+          }
+        }
+      }
+    ]
+  },
+  "AnimationSets": {
+    "Idle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Idle.blockyanim",
+          "SoundEventId": "SFX_Horse_Idle",
+          "Speed": 1
+        }
+      ]
+    },
+    "Walk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "SoundEventId": "SFX_Horse_Idle",
+          "Speed": 1
+        }
+      ]
+    },
+    "WalkBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "Run": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Gallop.blockyanim",
+          "Speed": 1
+        }
+      ]
+    },
+    "Crouch": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "BlendingDuration": 0.1
+        }
+      ]
+    },
+    "CrouchWalk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "BlendingDuration": 0.1
+        }
+      ]
+    },
+    "CrouchWalkBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "BlendingDuration": 0.1
+        }
+      ]
+    },
+    "Jump": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "Speed": 0.8
+        }
+      ]
+    },
+    "JumpWalk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "Speed": 0.8
+        }
+      ]
+    },
+    "JumpRun": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "Speed": 0.8
+        }
+      ]
+    },
+    "Fall": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "BlendingDuration": 0.4
+        }
+      ]
+    },
+    "Alerted": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Horse_Alerted"
+        }
+      ]
+    },
+    "Curious": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "Hurt": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "SoundEventId": "SFX_Horse_Hurt"
+        },
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false,
+          "SoundEventId": "SFX_Horse_Hurt"
+        }
+      ]
+    },
+    "Death": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Horse_Death"
+        }
+      ]
+    },
+    "Laydown": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Laydown.blockyanim",
+          "Looping": false
+        }
+      ]
+    },
+    "Sleep": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Sleep.blockyanim",
+          "SoundEventId": "SFX_Horse_Sleep"
+        }
+      ]
+    },
+    "Wake": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Wake.blockyanim",
+          "Looping": false,
+          "SoundEventId": "SFX_Horse_Wake"
+        }
+      ]
+    },
+    "Spawn": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "BlendingDuration": 0,
+          "Looping": false
+        }
+      ]
+    },
+    "Eat": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "LookAround": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "Looping": false
+        }
+      ]
+    },
+    "Neigh": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "Looping": false
+        }
+      ]
+    },
+    "FlyIdle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "Fly": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "FlyFast": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "FlyBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "SwimIdle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "Swim": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "SwimBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "SwimFast": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "SwimJump": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "BlendingDuration": 0.1,
+          "Looping": false
+        }
+      ]
+    },
+    "SwimSink": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "SwimFloat": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "FluidIdle": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Idle.blockyanim",
+          "Speed": 0.6
+        }
+      ]
+    },
+    "FluidWalk": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "Speed": 0.6
+        }
+      ]
+    },
+    "FluidWalkBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
+          "Speed": 0.6
+        }
+      ]
+    },
+    "FluidRun": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Gallop.blockyanim",
+          "Speed": 0.6
+        }
+      ]
+    },
+    "SwimDive": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "SwimDiveBackward": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "SwimDiveFast": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim"
+        }
+      ]
+    },
+    "GreetAnimation": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Idle.blockyanim",
+          "Looping": false,
+          "Speed": 1.0
+        }
+      ]
+    },
+    "RejectRider": {
+      "Animations": [
+        {
+          "Animation": "NPC/Livestock/Chocobo/Animations/Reject.blockyanim",
+          "Looping": false,
+          "Speed": 1.0
+        }
+      ]
+    }
+  },
+  "RandomAttachmentSets": {
+    "Barding": {
+      "Common": {
+        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.blockymodel",
+        "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.png"
+      },
+      "Dragoon": {
+        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.blockymodel",
+        "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.png"
+      }
+    }
+  }
+}

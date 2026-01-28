@@ -1,0 +1,17 @@
+{
+  "Groups": {
+    "Hostile": [
+      "PredatorsBig",
+      "Void"
+    ],
+    "Ignore": [
+      "Prey",
+      "PreyBig",
+      "Critters",
+      "Vermin"
+    ],
+    "Neutral": [
+      "Player"
+    ]
+  }
+}

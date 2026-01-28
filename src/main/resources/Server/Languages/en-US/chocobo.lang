@@ -1,0 +1,10 @@
+# === interactionHints ===
+interactionHints.tame = Press [{key}] to tame.
+
+# === itemNames ===
+itemName.Gysahl.Golden = Golden Gysahl Green
+itemName.Gysahl = Gysahl Green
+
+# === itemDescriptions ===
+itemDescription.Gysahl.Golden = A legendary Chocobo snack, said to be loved even by Red Comet.
+itemDescription.Gysahl = A Chocobo's favorite snack.

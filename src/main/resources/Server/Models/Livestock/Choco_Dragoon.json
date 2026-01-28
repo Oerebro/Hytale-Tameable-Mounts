@@ -1,0 +1,11 @@
+{
+  "Parent": "Chocobo",
+  "RandomAttachmentSets": {
+    "Armor": {
+      "Dragoon": {
+        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.blockymodel",
+        "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.png"
+      }
+    }
+  }
+}

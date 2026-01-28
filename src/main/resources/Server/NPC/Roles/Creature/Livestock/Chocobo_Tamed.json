@@ -1,0 +1,34 @@
+{
+  "Type": "Variant",
+  "Reference": "MountTamed",
+  "Modify": {
+    "Appearance": "Chocobo",
+    "AttitudeGroup": "MountTamed",
+    "FlockArray": [
+      "Horse",
+      "Horse_Foal"
+    ],
+    "LovedItems": [
+      "Golden_Gysahl_Green"
+    ],
+    "AttractiveItems": [
+      "Gysahl_Green"
+    ],
+
+    "IsMountable": true,
+    "IsUntamed": false,
+
+    "MountAnchorY": 1.9,
+    "AlertedTimeoutReaction": [1,5],
+    "AlertedTimeoutGiveUp": [1,3],
+    "ChanceToTurnFriendly": 25,
+    "ChanceToTurnFriendlyWithAttractiveItem": 100,
+    "FriendlyOverrideTime": 20,
+    "FriendlyOverrideTimeWithAttractiveItem": 1.0,
+
+    "RunThreshold": 0.7
+
+  },
+
+
+}

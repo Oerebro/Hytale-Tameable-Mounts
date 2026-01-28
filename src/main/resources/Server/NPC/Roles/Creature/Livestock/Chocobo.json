@@ -1,0 +1,21 @@
+{
+  "Type": "Variant",
+  "Reference": "MountWild",
+  "Modify": {
+    "Appearance": "Chocobo",
+    "AttitudeGroup": "MountUntamed",
+    "FlockArray": [
+      "Horse",
+      "Horse_Foal"
+    ],
+    "LovedItems": [
+      "Golden_Gysahl_Green"
+    ],
+    "AttractiveItems": [
+      "Gysahl_Green"
+    ],
+    "IsMountable": false,
+    "IsUntamed": true
+  }
+
+}

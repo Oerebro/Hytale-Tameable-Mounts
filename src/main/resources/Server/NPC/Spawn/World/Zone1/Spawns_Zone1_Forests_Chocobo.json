@@ -1,0 +1,18 @@
+{
+  "Environments": [
+    "Env_Zone1_Forests",
+    "Env_Zone1_Autumn",
+    "Env_Zone1_Plains"
+  ],
+  "NPCs": [
+    {
+      "Weight": 1,
+      "SpawnBlockSet": "Soil",
+      "Id": "Chocobo"
+    }
+  ],
+  "DayTimeRange": [
+    0,
+    24
+  ]
+}
