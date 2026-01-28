@@ -14,6 +14,7 @@ import com.hypixel.hytale.protocol.InteractionType;
 import com.hypixel.hytale.protocol.MountController;
 import com.hypixel.hytale.protocol.Vector3f;
 import com.hypixel.hytale.server.core.codec.ProtocolCodecs;
+import com.hypixel.hytale.server.core.command.system.CommandContext;
 import com.hypixel.hytale.server.core.entity.InteractionContext;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.CooldownHandler;
@@ -29,21 +30,6 @@ public class TameInteraction extends SimpleInstantInteraction {
     public static final BuilderCodec<TameInteraction> CODEC = BuilderCodec.builder(
                     TameInteraction.class, TameInteraction::new, SimpleInstantInteraction.CODEC
             )
-            .appendInherited(
-                    new KeyedCodec<>("AttachmentOffset", ProtocolCodecs.VECTOR3F),
-                    (o, v) -> o.attachmentOffset.assign(v.x, v.y, v.z),
-                    o -> new Vector3f(o.attachmentOffset.x, o.attachmentOffset.y, o.attachmentOffset.z),
-                    (o, p) -> o.attachmentOffset = p.attachmentOffset
-            )
-            .add()
-            .<MountController>appendInherited(
-                    new KeyedCodec<>("Controller", new EnumCodec<>(MountController.class)),
-                    (o, v) -> o.controller = v,
-                    o -> o.controller,
-                    (o, p) -> o.controller = p.controller
-            )
-            .addValidator(Validators.nonNull())
-            .add()
             .build();
     private com.hypixel.hytale.math.vector.Vector3f attachmentOffset = new com.hypixel.hytale.math.vector.Vector3f(0.0F, 0.0F, 0.0F);
     private MountController controller;
@@ -55,26 +41,17 @@ public class TameInteraction extends SimpleInstantInteraction {
     protected void firstRun(@Nonnull InteractionType type, @Nonnull InteractionContext context, @Nonnull CooldownHandler cooldownHandler) {
         Ref<EntityStore> target = context.getTargetEntity();
         CommandBuffer<EntityStore> commandBuffer = context.getCommandBuffer();
-
-        //check if the player holds the correct item
+        System.out.println("Test to see where this is triggered!");
         if (target == null) {
             context.getState().state = InteractionState.Failed;
         } else {
-            Ref<EntityStore> self = context.getEntity();
+            //Ref<EntityStore> origin = context.getEntity();
+            //Player player = commandBuffer.getComponent(origin,Player.getComponentType());
 
-            MountedComponent mounted = commandBuffer.getComponent(self, MountedComponent.getComponentType());
-            if (mounted != null) {
-                commandBuffer.removeComponent(self, MountedComponent.getComponentType());
-                context.getState().state = InteractionState.Failed;
-            } else {
-                MountedByComponent mountedBy = commandBuffer.getComponent(target, MountedByComponent.getComponentType());
-                if (mountedBy != null && !mountedBy.getPassengers().isEmpty()) {
-                    context.getState().state = InteractionState.Failed;
-                } else {
-                    commandBuffer.addComponent(self, MountedComponent.getComponentType(), new MountedComponent(target, this.attachmentOffset, this.controller));
-                }
-            }
+            //System.out.println(player.getInventory().getItemInHand().getItem().getTranslationProperties().getName());
+            //NPCEntity mount = commandBuffer.getComponent(target, NPCEntity.getComponentType());
         }
+
     }
 
 }

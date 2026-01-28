@@ -26,6 +26,7 @@ public class MountInitSystem extends TickingSystem<EntityStore> {
     //Define all mount role names here
     public enum MountRole {
         CHOCOBO,
+        HORSE,
         PLUGIN_MOUNT;
 
         private static final Set<String> NAMES =
@@ -61,21 +62,21 @@ public class MountInitSystem extends TickingSystem<EntityStore> {
     }
 
     private static void initializeMount(Ref<EntityStore> ref, Store<EntityStore> store){
-        //TameableMountComponent mountComponent = new TameableMountComponent();
+        TameableMountComponent mountComponent = new TameableMountComponent();
         //get entity from the store
-        //Holder<EntityStore> holder = store.removeEntity(ref,RemoveReason.UNLOAD);
+        Holder<EntityStore> holder = store.removeEntity(ref,RemoveReason.UNLOAD);
         //remove components
-        //holder.tryRemoveComponent(TameableMountComponent.getComponentType());
-        System.out.println("initializeMount();");
-        store.ensureComponent(ref,TameableMountComponent.getComponentType());
+        holder.tryRemoveComponent(TameableMountComponent.getComponentType());
+        //System.out.println("initializeMount();");
+        //store.ensureComponent(ref,TameableMountComponent.getComponentType());
 
         //changeAttachments(holder);
 
         //add back components
-        //holder.addComponent(TameableMountComponent.getComponentType(),mountComponent);
+        holder.addComponent(TameableMountComponent.getComponentType(),mountComponent);
 
         //return entity to store
-        //ref = store.addEntity(holder,AddReason.LOAD);
+        ref = store.addEntity(holder,AddReason.LOAD);
     }
 
     private static void changeAttachments(Holder<EntityStore> holder){

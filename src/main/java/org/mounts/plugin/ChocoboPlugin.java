@@ -7,28 +7,33 @@ import com.hypixel.hytale.component.ResourceType;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
+import com.hypixel.hytale.server.core.modules.interaction.interaction.config.Interaction;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
-import com.hypixel.hytale.server.npc.systems.RoleChangeSystem;
+import com.hypixel.hytale.server.npc.NPCPlugin;
+import com.hypixel.hytale.server.npc.asset.builder.BuilderFactory;
+import com.hypixel.hytale.server.npc.asset.builder.BuilderManager;
+import com.hypixel.hytale.server.npc.instructions.*;
 import org.mounts.command.ExampleCommand;
 import org.mounts.components.TameableMountComponent;
 import org.mounts.event.RegisterPlayer;
+import org.mounts.builders.BuilderActionTame;
+import org.mounts.interactions.TameInteraction;
 import org.mounts.systems.MountInitSystem;
-import org.mounts.systems.SaveEntityDataSystem;
 import org.mounts.systems.TamingSystem;
 import javax.annotation.Nonnull;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 /**
  * This class serves as the entrypoint for your plugin. Use the setup method to register into game registries or add
  * event listeners.
  */
 public class ChocoboPlugin extends JavaPlugin {
-
+    @Nonnull
+    public static String FACTORY_CLASS_ACTION = "Action";
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
     private static Player player;
     private static World world;
@@ -37,6 +42,7 @@ public class ChocoboPlugin extends JavaPlugin {
     private ComponentType<EntityStore, NPCMountComponent> mountComponentType;
     private ResourceType<EntityStore, MountInitSystem.MountInitQueue> mountInitQueueResourceType;
     private final ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
+    protected final BuilderManager builderManager = new BuilderManager();
 
     public ChocoboPlugin(@Nonnull JavaPluginInit init) {
         super(init);
@@ -46,11 +52,21 @@ public class ChocoboPlugin extends JavaPlugin {
     @Override
     protected void setup(){
         LOGGER.atInfo().log("Setting up plugin " + this.getName());
+        //builders
+        this.builderManager.addCategory(FACTORY_CLASS_ACTION, Action.class);
+        this.registerCoreFactories();
 
         //components
+
         this.tameableMountComponentComponentType = this.getEntityStoreRegistry().registerComponent(TameableMountComponent.class, "Tameable", TameableMountComponent.CODEC);
         //resources
         this.mountInitQueueResourceType = this.getEntityStoreRegistry().registerResource(MountInitSystem.MountInitQueue.class, MountInitSystem.MountInitQueue::new);
+
+        NPCPlugin.get().registerCoreComponentType("Tame", BuilderActionTame::new);
+        NPCPlugin.get().registerCoreComponentType("TameGuaranteed", BuilderActionTame.Guaranteed::new);
+        Interaction.CODEC.register("Tame", TameInteraction.class, TameInteraction.CODEC);
+        //Interaction.CODEC.register("TameGuaranteed", TameInteraction.class, TameInteraction.CODEC);
+
 
         //events
         this.getEventRegistry().registerGlobal(PlayerReadyEvent.class, RegisterPlayer::onPlayerReady);
@@ -67,6 +83,10 @@ public class ChocoboPlugin extends JavaPlugin {
             LOGGER.atInfo().log("Already has a player registered.");
         }
 
+    }
+
+    protected void registerCoreFactories() {
+        this.builderManager.registerFactory(new BuilderFactory(Action.class, "Type"));
     }
 
     @Override

@@ -81,9 +81,10 @@ public class TameableMountComponent implements Component<EntityStore> {
 
     public void addTameProgress(int progress){
         this.tamingProgress += progress;
-        if(tamingProgress >= 100){
-            isTame = true;
-        }
+    }
+
+    public void setTame(boolean tame){
+        this.isTame = tame;
     }
 
     public boolean isTame(){
