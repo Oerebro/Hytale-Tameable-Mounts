@@ -1,10 +1,12 @@
 {
   "Model": "NPC/Livestock/Chocobo/Models/Chocobo.blockymodel",
-  "Texture": "NPC/Livestock/Chocobo/Models/Chocobo.png",
+  "Texture": "NPC/Livestock/Chocobo/Models/Chocobo_Grey.png",
+  "GradientId": "Yellow",
+  "GradientSet": "Flashy_Synthetic",
   "EyeHeight": 2.1,
   "CrouchOffset": -0.5,
-  "MinScale": 1.8,
-  "MaxScale": 2.0,
+  "MinScale": 1.2,
+  "MaxScale": 1.5,
   "HitBox": {
     "Max": { "X": 0.203125, "Y": 0.890625, "Z": 0.3046875 },
     "Min": { "X": -0.203125, "Y": 0, "Z": -0.3046875 }
@@ -441,8 +443,18 @@
       ]
     }
   },
+  "DefaultAttachments": [
+    {
+      "Model": "NPC/Livestock/Chocobo/Models/Attachments/Legs.blockymodel",
+      "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Chocobo_Defaults.png"
+    }
+  ],
   "RandomAttachmentSets": {
     "Barding": {
+      "Default": {
+        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Default.blockymodel",
+        "Texture": "NPC/Livestock/Chocobo/Models/Chocobo.png"
+      },
       "Common": {
         "Model": "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.blockymodel",
         "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.png"
@@ -450,6 +462,12 @@
       "Dragoon": {
         "Model": "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.blockymodel",
         "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.png"
+      }
+    },
+    "Saddle": {
+      "Default": {
+        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Default.blockymodel",
+        "Texture": "NPC/Livestock/Chocobo/Models/Chocobo.png"
       }
     }
   }

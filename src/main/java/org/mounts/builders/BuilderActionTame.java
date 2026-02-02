@@ -20,6 +20,7 @@ public class BuilderActionTame extends BuilderActionBase {
     protected final StringHolder movementConfig = new StringHolder();
 
     public BuilderActionTame() {
+
     }
 
     @Nonnull

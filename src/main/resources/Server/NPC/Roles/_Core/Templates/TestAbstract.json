@@ -1,0 +1,341 @@
+{
+  "Type": "Abstract",
+  "Parameters": {
+    "Appearance": {
+      "Value": "Deer_Doe",
+      "Description": "The NPC's model."
+    },
+    "AttitudeGroup": {
+      "Value": "Passive",
+      "Description": "The attitude group this NPC belongs to."
+    },
+    "WanderRadius": {
+      "Value": 7,
+      "Description": "The wander radius of the NPC."
+    },
+    "ViewRange": {
+      "Value": 16,
+      "Description": "The view distance of the NPC, in blocks."
+    },
+    "ViewSector": {
+      "Value": 180,
+      "Description": "The view sector of the NPC, in degrees."
+    },
+    "HearingRange": {
+      "Value": 8,
+      "Description": "The hearing distance of the NPC, in blocks."
+    },
+    "AbsoluteDetectionRange": {
+      "Value": 4,
+      "Description": "The range at which a target is guaranteed to be detected, in blocks. If set to zero, absolute detection will be disabled. Within the alerted state, this value has an upper bound of 0.75 * AlertedActionRange."
+    },
+    "AlertedRange": {
+      "Value": 18,
+      "Description": "The range within which the target can be seen/sensed when the NPC is alerted to their presence, in blocks. Should be higher than sense ranges."
+    },
+    "AlertedActionRange": {
+      "Value": 8,
+      "Description": "The range at which an NPC will react to other NPCs and players, depending on the attitude towards them, in blocks. Should be higher than AbsoluteDetectionRange."
+    },
+    "LeashDistance": {
+      "Value": 20,
+      "Description": "The range at which an NPC will start to want to return to their spawn point, in blocks."
+    },
+    "AttractiveItems": {
+      "Value": [ "Tool_Feedbag" ],
+      "Description": "The list of items that are deemed attractive (there's a chance targets holding them will be followed)."
+    },
+    "LovedItems": {
+      "Value": [ ],
+      "TypeHint": "String",
+      "Description": "The list of items that are deemed very attractive (it's guaranteed targets holding them will be followed and befriended)."
+    },
+    "AttractiveItemsTimeout": {
+      "Value": [ 15, 20 ],
+      "Description": "The maximum timeout after which the NPC will lose interest in attractive times, regardless of range to the target, in seconds."
+    },
+    "AttractiveItemsSmellTimeout": {
+      "Value": [ 8, 12 ],
+      "Description": "The timeout after which the NPC will lose interest in attractive times, when near the target, in seconds"
+    },
+    "DropList": {
+      "Value": "Empty",
+      "Description": "The NPC's drop list."
+    },
+    "FlockArray": {
+      "Value": [ ],
+      "TypeHint": "String",
+      "Description": "The set of NPCs belonging to this flock type"
+    },
+    "ClimbHeight": {
+      "Value": 1,
+      "Description": "The maximum climb height, in blocks."
+    },
+    "PlayerDefaultAttitude": {
+      "Value": "Neutral",
+      "Description": "The default attitude towards the player."
+    },
+    "AlertedTimeoutReaction": {
+      "Value": [ 1, 5 ],
+      "Description": "The timeout after which an alerted NPC will make a decision on whether to befriend the target, in seconds."
+    },
+    "AlertedTimeoutGiveUp": {
+      "Value": [ 5, 12 ],
+      "Description": "The timeout after which an alerted NPC will give up on the target, in seconds."
+    },
+    "GrazingBlockSet": {
+      "Value": "Grass",
+      "Description": "The type of block that this NPC will graze on top of."
+    },
+    "FoodBlockSet": {
+      "Value": "Hay",
+      "Description": "The type of block that this NPC will occasionally seek out to munch on."
+    },
+    "FoodItemSet": {
+      "Value": [ "Ingredient_Hay" ],
+      "Description": "The list of dropped items that this NPC will occasionally seek out to munch on."
+    },
+    "DayTimePeriod": {
+      "Value": [ 6.01, 17.99 ],
+      "Description": "The hour range considered to be daytime for this NPC (inclusive). Hours should be written with decimal fractions."
+    },
+    "DayTimeNapWeight": {
+      "Value": 2,
+      "Description": "The weight used to determine if the NPC should have a short nap during the day. Set to 0 to disable."
+    },
+    "DayTimeNapTimeRange": {
+      "Value": [ 10, 12 ],
+      "Description": "The duration range of daytime naps, in seconds."
+    },
+    "DayFlavorAnimation": {
+      "Value": "",
+      "Description": "The flavor animation to play during the day. Ignored if null or empty."
+    },
+    "GreetAnimation": {
+      "Value": "",
+      "Description": "The flavor animation to play when greeting another NPC or player. Ignored if null or empty."
+    },
+    "ChanceToTurnFriendly": {
+      "Value": 25,
+      "Description": "The chance that the NPC will befriend the target when in the alerted state."
+    },
+    "ChanceToTurnFriendlyWithAttractiveItem": {
+      "Value": 50,
+      "Description": "The chance that the NPC will befriend the target, if the latter is holding an attractive item."
+    },
+    "FriendlyOverrideTime": {
+      "Value": 300,
+      "Description": "The duration of the friendly attitude override for the target, in seconds."
+    },
+    "FriendlyOverrideTimeWithAttractiveItem": {
+      "Value": 900,
+      "Description": "The duration of the friendly attitude override for the target, when the latter is holding an attractive item, in seconds."
+    },
+    "IgnoreOverrideTime": {
+      "Value": 1200,
+      "Description": "The duration of the ignore attitude override for the target."
+    },
+    "WeightGreet": {
+      "Value": 1,
+      "Description": "The chance that the NPC will greet a friendly target."
+    },
+    "WeightFollowItem": {
+      "Value": 1,
+      "Description": "The chance that the NPC will follow a friendly target holding an attractive item."
+    },
+    "WeightFollow": {
+      "Value": 1,
+      "Description": "The chance that the NPC will follow friendly NPCs or players at a distance."
+    },
+    "WeightIgnore": {
+      "Value": 1,
+      "Description": "The chance that the NPC will ignore friendly NPCs of players."
+    },
+    "IsHarvestable": {
+      "Value": false,
+      "Description": "Whether this NPC can be 'harvested'. This includes shearing, milking, etc."
+    },
+    "HarvestInteractionContext": {
+      "Value": "",
+      "Description": "The interaction context of the harvest tool. If empty, no tool is needed to harvest the NPC."
+    },
+    "HarvestRequiredAttitudes": {
+      "Value": [ "Friendly", "Neutral", "Hostile", "Ignore", "Revered" ],
+      "Description": "The attitude groups of players that can harvest the NPC."
+    },
+    "HarvestDropList": {
+      "Value": "",
+      "Description": "The drop list that's executed when the NPC is harvested."
+    },
+    "HarvestParticles": {
+      "Value": "Alerted",
+      "Description": "The particle system that is spawned when the NPC is harvested."
+    },
+    "HarvestSound": {
+      "Value": "SFX_Sheep_Sheared",
+      "Description": "The sound that plays when NPC is harvested."
+    },
+    "HarvestTimeout": {
+      "Value": [ "P1D", "P1D" ],
+      "Description": "The minimum time between consecutive harvests. Expressed in the ISO-8601 time period notation, where both values of the array must have the same prefix (either 'PT' or 'P')."
+    },
+    "HarvestModelSlot": {
+      "Value": "",
+      "Description": "The model attachment slot where the 'harvested' state is displayed."
+    },
+    "HarvestModelAttachmentHarvestable": {
+      "Value": "",
+      "Description": "The attachment that should be rendered when the NPC can be harvested."
+    },
+    "HarvestModelAttachmentHarvested": {
+      "Value": "",
+      "Description": "The attachment that should be rendered when the NPC was harvested and is in timeout."
+    },
+    "HarvestAddItemBucket": {
+      "Value": "",
+      "Description": "Item to add when player holds Container_Bucket (e.g., milk bucket for milking)."
+    },
+    "HarvestAddItemDecoBucket": {
+      "Value": "",
+      "Description": "Item to add when player holds Deco_Bucket (e.g., milk bucket for milking)."
+    },
+    "ProduceItem": {
+      "Value": "",
+      "Description": "The item this NPC produces (poop, eggs, etc)."
+    },
+    "ProduceTimeout": {
+      "Value": [ "PT6H", "PT36H" ],
+      "Description": "The timeout between consecutive produces."
+    },
+    "DayFlavorAnimationLength": {
+      "Value": [ 3, 5 ],
+      "Description": "How long the daytime flavor animation will be played for, in seconds."
+    },
+    "Timid": {
+      "Value": false,
+      "Description": "Whether this NPC is timid or not. Timid NPCs are harder to approach and befriend."
+    },
+    "AttackWhenStartled": {
+      "Value": false,
+      "Description": "Whether this NPC attacks when startled."
+    },
+    "Attack": {
+      "Value": "",
+      "Description": "The attack interaction this NPC will use."
+    },
+    "AttackRange": {
+      "Value": 5,
+      "Description": "The range at which the NPC can identify an attacker."
+    },
+    "MaxSpeed": {
+      "Value": 5,
+      "Description": "The maximum walking speed of the NPC."
+    },
+    "MaxHealth": {
+      "Value": 100,
+      "Description": "The maximum health of the NPC."
+    },
+    "MaxRotationSpeed": {
+      "Value": 360,
+      "Description": "The maximum rotation speed, in degrees per second."
+    },
+    "RunThreshold": {
+      "Value": 0.5,
+      "Description": "The speed ratio at which the NPC switches to run animation (e.g if MaxSpeed is 10, and RunThreshold is set to 0.55, the NPC will start running at speed 5.5)."
+    },
+    "IsMemory": {
+      "Value": false,
+      "Description": "Whether the NPC is a memory."
+    },
+    "MemoriesCategory": {
+      "Value": "Livestock",
+      "Description": "The category of the memory."
+    },
+    "MemoriesNameOverride": {
+      "Value": "",
+      "Description": "If set, overrides the memory name."
+    },
+    "IsMountable": {
+      "Value": false,
+      "Description": "Whether this NPC can be mounted."
+    },
+    "IsUntamed": {
+      "Value": true,
+      "Description": "Whether this NPC is still untamed."
+    },
+
+    "MountAnchorX":{
+      "Value": 0
+    },
+    "MountAnchorY":{
+      "Value": 0
+    },
+    "MountAnchorZ":{
+      "Value": 0
+    },
+    "MountMovementConfig": {
+      "Value": "Mount"
+    },
+    "BreathesInWater": {
+      "Value": false,
+      "Description": "Whether this NPC can breathe underwater."
+    },
+    "NameTranslationKey": {
+      "Value": "server.npcRoles.Template.name",
+      "Description": "The translation key for the NPC name display"
+    }
+  },
+  "IsMemory": { "Compute": "IsMemory" },
+  "MemoriesCategory": { "Compute": "MemoriesCategory" },
+  "MemoriesNameOverride": { "Compute": "MemoriesNameOverride" },
+  "DropList": { "Compute": "DropList" },
+  "FlockSpawnTypes": { "Compute": "FlockArray" },
+  "FlockAllowedNPC": { "Compute": "FlockArray" },
+  "FlockSpawnTypesRandom": true,
+  "DisableDamageGroups": [ "Self" ],
+  "Appearance": { "Compute": "Appearance" },
+  "DefaultPlayerAttitude": { "Compute": "PlayerDefaultAttitude" },
+  "DefaultNPCAttitude": "Neutral",
+  "AttitudeGroup": { "Compute": "AttitudeGroup" },
+  "ApplySeparation": true,
+  "SeparationDistance": 1,
+  "SeparationWeight": 1,
+  "SeparationDistanceTarget": 0.5,
+  "SeparationNearRadiusTarget": 1,
+  "SeparationFarRadiusTarget": 7,
+  "BreathesInWater": { "Compute": "BreathesInWater" },
+  "KnockbackScale": 0.5,
+  "NameTranslationKey": { "Compute": "NameTranslationKey" },
+  "MaxHealth": { "Compute": "MaxHealth" },
+  "MotionControllerList": [
+    {
+      "Type": "Walk",
+      "MaxWalkSpeed": { "Compute": "MaxSpeed" },
+      "Gravity": 15,
+      "MaxFallSpeed": 15,
+      "JumpHeight": 0.1,
+      "MaxRotationSpeed": { "Compute": "MaxRotationSpeed" },
+      "Acceleration": 100,
+      "RunThreshold": { "Compute": "RunThreshold" },
+      "DescentAnimationType": "Fall",
+      "DescentSteepness": 2.5,
+      "DescentBlending": 1,
+      "JumpDescentSteepness": 8,
+      "MaxClimbHeight": { "Compute": "ClimbHeight" }
+    }
+  ],
+  "Instructions": [
+    {
+      "Sensor": {
+        "Type": "Player",
+        "Range": 3
+      },
+      "Actions": [
+        {
+          "Type": "TestAction",
+          "Content": "TestAction"
+        }
+      ]
+    }
+  ]
+}

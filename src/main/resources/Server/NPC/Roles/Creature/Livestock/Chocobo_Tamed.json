@@ -14,7 +14,10 @@
     "AttractiveItems": [
       "Gysahl_Green"
     ],
-
+    "BardingItems": [
+      "Dragoon_Barding",
+      "Common_Barding"
+    ],
     "IsMountable": true,
     "IsUntamed": false,
 
@@ -28,7 +31,5 @@
 
     "RunThreshold": 0.7
 
-  },
-
-
+  }
 }

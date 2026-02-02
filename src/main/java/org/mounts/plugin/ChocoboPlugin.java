@@ -5,24 +5,35 @@ import com.hypixel.hytale.component.ComponentType;
 import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.ResourceType;
 import com.hypixel.hytale.logger.HytaleLogger;
+import com.hypixel.hytale.protocol.Packet;
+import com.hypixel.hytale.protocol.packets.interaction.DismountNPC;
 import com.hypixel.hytale.server.core.entity.entities.Player;
 import com.hypixel.hytale.server.core.event.events.player.PlayerReadyEvent;
+import com.hypixel.hytale.server.core.io.ServerManager;
+import com.hypixel.hytale.server.core.io.adapter.PacketAdapters;
+import com.hypixel.hytale.server.core.io.adapter.PacketFilter;
+import com.hypixel.hytale.server.core.io.adapter.PlayerPacketFilter;
 import com.hypixel.hytale.server.core.modules.interaction.interaction.config.Interaction;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
+import com.hypixel.hytale.server.core.universe.PlayerRef;
 import com.hypixel.hytale.server.core.universe.world.World;
 import com.hypixel.hytale.server.core.universe.world.storage.EntityStore;
 import com.hypixel.hytale.server.npc.NPCPlugin;
 import com.hypixel.hytale.server.npc.asset.builder.BuilderFactory;
 import com.hypixel.hytale.server.npc.asset.builder.BuilderManager;
 import com.hypixel.hytale.server.npc.instructions.*;
+import org.mounts.builders.BuilderActionEquipBarding;
+import org.mounts.builders.BuilderActionInitMount;
+import org.mounts.builders.BuilderActionTest;
 import org.mounts.command.ExampleCommand;
 import org.mounts.components.TameableMountComponent;
 import org.mounts.event.RegisterPlayer;
 import org.mounts.builders.BuilderActionTame;
 import org.mounts.interactions.TameInteraction;
+import org.mounts.packethandlers.ExtendedMountGamePacketHandler;
 import org.mounts.systems.MountInitSystem;
-import org.mounts.systems.TamingSystem;
+
 import javax.annotation.Nonnull;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -52,21 +63,23 @@ public class ChocoboPlugin extends JavaPlugin {
     @Override
     protected void setup(){
         LOGGER.atInfo().log("Setting up plugin " + this.getName());
-        //builders
-        this.builderManager.addCategory(FACTORY_CLASS_ACTION, Action.class);
-        this.registerCoreFactories();
 
         //components
-
         this.tameableMountComponentComponentType = this.getEntityStoreRegistry().registerComponent(TameableMountComponent.class, "Tameable", TameableMountComponent.CODEC);
         //resources
         this.mountInitQueueResourceType = this.getEntityStoreRegistry().registerResource(MountInitSystem.MountInitQueue.class, MountInitSystem.MountInitQueue::new);
+        this.getEntityStoreRegistry().registerSystem(new MountInitSystem(mountInitQueueResourceType));
+        this.getEntityStoreRegistry().registerSystem(new MountInitSystem.OnAdd());
 
         NPCPlugin.get().registerCoreComponentType("Tame", BuilderActionTame::new);
         NPCPlugin.get().registerCoreComponentType("TameGuaranteed", BuilderActionTame.Guaranteed::new);
         Interaction.CODEC.register("Tame", TameInteraction.class, TameInteraction.CODEC);
-        //Interaction.CODEC.register("TameGuaranteed", TameInteraction.class, TameInteraction.CODEC);
 
+        NPCPlugin.get().registerCoreComponentType("TestAction", BuilderActionTest::new);
+        NPCPlugin.get().registerCoreComponentType("InitMount", BuilderActionInitMount::new);
+        NPCPlugin.get().registerCoreComponentType("EquipBarding", BuilderActionEquipBarding::new);
+
+        //ExtendedMountGamePacketHandler.registerPacketCounters();
 
         //events
         this.getEventRegistry().registerGlobal(PlayerReadyEvent.class, RegisterPlayer::onPlayerReady);
@@ -85,16 +98,14 @@ public class ChocoboPlugin extends JavaPlugin {
 
     }
 
-    protected void registerCoreFactories() {
-        this.builderManager.registerFactory(new BuilderFactory(Action.class, "Type"));
-    }
+
 
     @Override
     public void start(){
         //systems
-        this.getEntityStoreRegistry().registerSystem(new MountInitSystem(mountInitQueueResourceType));
-        this.getEntityStoreRegistry().registerSystem(new MountInitSystem.OnAdd());
-        this.getEntityStoreRegistry().registerSystem(new TamingSystem());
+        //;
+        //this.getEntityStoreRegistry().registerSystem(new MountInitSystem.OnAdd());
+        //this.getEntityStoreRegistry().registerSystem(new TamingSystem());
     }
 
     public ResourceType<EntityStore, MountInitSystem.MountInitQueue> getMountInitQueueResourceType() {
@@ -123,10 +134,6 @@ public class ChocoboPlugin extends JavaPlugin {
 
     public ComponentType<EntityStore, TameableMountComponent> getTameableMountComponentComponentType(){
         return this.tameableMountComponentComponentType;
-    }
-
-    public static ComponentType<EntityStore,NPCMountComponent> getNPCMountComponentType(){
-        return instance.getNPCMountComponent();
     }
 
     public ComponentType<EntityStore,NPCMountComponent> getNPCMountComponent(){

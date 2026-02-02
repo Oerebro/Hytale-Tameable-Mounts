@@ -1,14 +1,26 @@
 {
-  "Group": "Ahren",
-  "Name": "Chocobos",
-  "Version": "0.1.0",
-  "Description": "",
-  "Authors": [],
-  "Website": "",
-  "Dependencies": {},
-  "OptionalDependencies": {},
-  "LoadBefore": {},
-  "DisabledByDefault": false,
-  "IncludesAssetPack": false,
-  "SubPlugins": []
+    "Group": "Ahren",
+    "Name": "Chocobos",
+    "Version": "0.0.2",
+    "Description": "",
+    "Authors": [
+        
+    ],
+    "Website": "",
+    "Dependencies": {
+        "Hytale:NPC": "*",
+        "Hytale:Mounts": "*"
+    },
+    "OptionalDependencies": {
+        
+    },
+    "LoadBefore": {
+        
+    },
+    "DisabledByDefault": false,
+    "IncludesAssetPack": true,
+    "Main": "org.mounts.plugin.ChocoboPlugin",
+    "SubPlugins": [
+        
+    ]
 }

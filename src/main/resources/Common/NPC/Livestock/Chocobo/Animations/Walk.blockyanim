@@ -3,7 +3,7 @@
   "duration": 60,
   "holdLastKeyframe": false,
   "nodeAnimations": {
-    "body": {
+    "Body": {
       "position": [
         {
           "time": 0,
@@ -58,7 +58,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "torso": {
+    "Torso": {
       "position": [
         {
           "time": 0,
@@ -123,7 +123,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "wing_left": {
+    "Wing-Left": {
       "position": [
         {
           "time": 0,
@@ -144,7 +144,7 @@
       "orientation": [
         {
           "time": 0,
-          "delta": {"x": -0.03615, "y": -0.04516, "z": -0.11827, "w": 0.99129},
+          "delta": {"x": -0.03615, "y": -0.04516, "z": -0.11827, "w": 0.9913},
           "interpolationType": "linear"
         },
         {
@@ -154,7 +154,7 @@
         },
         {
           "time": 30,
-          "delta": {"x": -0.03615, "y": -0.04516, "z": -0.11827, "w": 0.99129},
+          "delta": {"x": -0.03615, "y": -0.04516, "z": -0.11827, "w": 0.9913},
           "interpolationType": "linear"
         },
         {
@@ -164,7 +164,7 @@
         },
         {
           "time": 60,
-          "delta": {"x": -0.03615, "y": -0.04516, "z": -0.11827, "w": 0.99129},
+          "delta": {"x": -0.03615, "y": -0.04516, "z": -0.11827, "w": 0.9913},
           "interpolationType": "linear"
         }
       ],
@@ -188,7 +188,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "wing_right": {
+    "Wing-Right": {
       "position": [
         {
           "time": 0,
@@ -253,7 +253,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "neck": {
+    "Neck": {
       "position": [
         {
           "time": 0,
@@ -318,7 +318,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "upper_neck": {
+    "Neck-Upper": {
       "position": [
         {
           "time": 0,
@@ -383,7 +383,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "head": {
+    "Head": {
       "position": [
         {
           "time": 0,
@@ -448,7 +448,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "jaw": {
+    "Jaw": {
       "position": [
         {
           "time": 0,
@@ -503,7 +503,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "leg_left": {
+    "Leg-Left": {
       "position": [
         {
           "time": 0,
@@ -573,7 +573,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "calf_left": {
+    "Calf-Left": {
       "position": [
         {
           "time": 0,
@@ -628,7 +628,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "foot_left": {
+    "Foot-Left": {
       "position": [
         {
           "time": 0,
@@ -688,7 +688,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "toe1_left": {
+    "Toe1-Left": {
       "position": [
         {
           "time": 0,
@@ -753,7 +753,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "toe2_left": {
+    "Toe2-Left": {
       "position": [
         {
           "time": 0,
@@ -818,7 +818,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "toe_hind_left": {
+    "Toe-Hind-Left": {
       "position": [
         {
           "time": 0,
@@ -878,7 +878,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "leg_right": {
+    "Leg-Right": {
       "position": [
         {
           "time": 0,
@@ -948,7 +948,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "calf_right": {
+    "Calf-Right": {
       "position": [
         {
           "time": 0,
@@ -1008,7 +1008,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "foot_right": {
+    "Foot-Right": {
       "position": [
         {
           "time": 0,
@@ -1068,7 +1068,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "toe1_right": {
+    "Toe1-Right": {
       "position": [
         {
           "time": 0,
@@ -1128,7 +1128,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "toe2_right": {
+    "Toe2-Right": {
       "position": [
         {
           "time": 0,
@@ -1188,7 +1188,7 @@
       "shapeVisible": [],
       "shapeUvOffset": []
     },
-    "toe_hind_right": {
+    "Toe-Hind-Right": {
       "position": [
         {
           "time": 0,

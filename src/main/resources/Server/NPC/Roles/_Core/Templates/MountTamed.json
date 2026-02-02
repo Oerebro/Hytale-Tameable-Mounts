@@ -11,9 +11,14 @@
       "Description": "The wander radius of the NPC."
     },
     "BardingItems": {
-      "Value": [ ],
+      "Value": [ "Rock_Bedrock" ],
       "TypeHint": "String",
-      "Description": "Allowed Barding items this mount can equip."
+      "Description": "Allowed Barding items this mount can equip. Set to bedrock because cant be empty."
+    },
+    "SaddleItems": {
+      "Value": [ "Rock_Bedrock" ],
+      "TypeHint": "String",
+      "Description": "Allowed saddle items this mount can equip. Set to bedrock because cant be empty."
     },
     "ViewRange": {
       "Value": 16,
@@ -2314,14 +2319,72 @@
         ]
       },
       {
-        "Enabled": { "Compute": "IsMountable" },
+        "Continue": true,
+        "Description": "Defaul interactable to false, so the following blocks dont need to disable",
+        "Sensor": {
+          "Type": "Any"
+        },
+        "Actions": [
+          {
+            "Type": "SetInteractable",
+            "Interactable": false
+          }
+        ]
+      },
+      {
+        "Continue": true,
+        "Enabled": {"Compute": "!isEmptyStringArray(BardingItems)"},
+        "Description": "Interaction for equipping a barding item.",
+        "Instructions": [
+          {
+            "Sensor": {
+              "Type": "Player",
+              "Range": 5,
+              "Filters": [
+                {
+                  "Type": "ItemInHand",
+                  "Items": {
+                    "Compute": "BardingItems"
+                  }
+                }
+              ]
+            },
+            "Instructions": [
+              {
+                "Continue": true,
+                "Sensor": {"Type": "Any"},
+                "Actions": [
+                  {
+                    "Type": "SetInteractable",
+                    "Interactable": true,
+                    "Hint": "server.interactionHints.equipBarding"
+                  }
+                ]
+              },
+              {
+                "Sensor": {
+                  "Type": "HasInteracted"
+                },
+                "Actions": [
+                  {
+                    "Type": "EquipBarding"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Enabled": {"Compute": "IsMountable"},
         "Description": "Mount the entity. TODO: How do I make it so you can mount but also change mount equipment?",
         "Instructions": [
           {
             "Sensor": {
               "Type": "Not",
-              "Sensor":{
-                "Type": "Any",
+              "Sensor": {
+                "Type": "Player",
+                "Range": 5,
                 "Filters": [
                   {
                     "Type": "ItemInHand",
@@ -2331,39 +2394,37 @@
                   }
                 ]
               }
-            }
-          },
-          {
-            "Continue": true,
-            "Sensor": {
-              "Type": "Any"
             },
-            "Actions": [
+            "Instructions": [
               {
-                "Type": "SetInteractable",
-                "Interactable": true,
-                "Hint": "server.interactionHints.mount"
-              }
-            ]
-          },
-          {
-            "Sensor": {
-              "Type": "HasInteracted"
-            },
-            "Actions": [
-              {
-                "Type": "State",
-                "State": "Idle"
+                "Continue": true,
+                "Sensor": {"Type":  "Any"},
+                "Actions": [
+                  {
+                    "Type": "SetInteractable",
+                    "Interactable": true,
+                    "Hint": "server.interactionHints.mount"
+                  }
+                ]
               },
               {
-                "Type": "Mount",
-                "AnchorX": { "Compute": "MountAnchorX" },
-                "AnchorY": { "Compute": "MountAnchorY" },
-                "AnchorZ": { "Compute": "MountAnchorZ" },
-                "MovementConfig": { "Compute": "MountMovementConfig" }
+                "Sensor": { "Type": "HasInteracted" },
+                "Actions": [
+                  { "Type": "PlayAnimation", "Slot": "Status" },
+                  { "Type": "SetFlag", "Name": "AnimationBlock", "SetTo": false },
+                  { "Type": "State", "State": "Idle" },
+                  {
+                    "Type": "Mount",
+                    "AnchorX": { "Compute": "MountAnchorX" },
+                    "AnchorY": { "Compute": "MountAnchorY" },
+                    "AnchorZ": { "Compute": "MountAnchorZ" },
+                    "MovementConfig": { "Compute": "MountMovementConfig" }
+                  }
+                ]
               }
             ]
           }
+
         ]
       }
     ]

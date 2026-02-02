@@ -57,8 +57,6 @@ public class ActionTame extends ActionBase {
     public boolean execute(@Nonnull Ref<EntityStore> ref, @Nonnull Role role, InfoProvider sensorInfo, double dt, @Nonnull Store<EntityStore> store) {
         super.execute(ref, role, sensorInfo, dt, store);
 
-        //Interactions interactions = store.getComponent(ref, Interactions.getComponentType());
-
         //get the mount component
         ComponentType<EntityStore, TameableMountComponent> mountComponentType = TameableMountComponent.getComponentType();
         TameableMountComponent mountComponent = store.getComponent(ref, mountComponentType);
@@ -79,10 +77,6 @@ public class ActionTame extends ActionBase {
 
         //set default particle
         String particleSystem = "Hearts_Subtle";
-
-        if(mountComponent.getTamingProgress() >= 100){
-            System.out.println("Role: "+store.getComponent(ref,NPCEntity.getComponentType()).getRoleName());
-        }
 
         if(mountComponent.getTamingProgress() >= 100 && !mountComponent.isTame()){
             particleSystem = "Hearts";

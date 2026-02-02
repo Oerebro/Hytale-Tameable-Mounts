@@ -1,0 +1,21 @@
+{
+  "TranslationProperties": {
+    "Name": "chocobo.itemName.Common_Barding",
+    "Description": "chocobo.itemDescription.Common_Barding"
+  },
+  "Parent": "Armor_Bronze_Chest",
+  "IconProperties": {
+    "Scale": 0.7,
+    "Translation": [
+      -1.2,
+      -5.4
+    ],
+    "Rotation": [
+      40.5,
+      45,
+      348.8
+    ]
+  },
+  "Quality": "Common",
+  "DropOnDeath": true
+}

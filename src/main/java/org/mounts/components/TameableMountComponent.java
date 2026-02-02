@@ -33,14 +33,27 @@ public class TameableMountComponent implements Component<EntityStore> {
                             mountComponent -> mountComponent.tamingProgress
                     )
                     .add()
+                    .append(
+                            new KeyedCodec<>("Saddle", Codec.STRING),
+                            (mountComponent, saddle) -> mountComponent.saddle = saddle,
+                            mountComponent -> mountComponent.saddle
+                    )
+                    .add()
+                    .append(
+                            new KeyedCodec<>("Barding", Codec.STRING),
+                            (mountComponent, barding) -> mountComponent.barding = barding,
+                            mountComponent -> mountComponent.barding
+                    )
+                    .add()
                     .build();
 
 
     private boolean isTame = false;
     private int tamingProgress = 0;
-    private ModelAttachment saddle = null;
-    private ModelAttachment barding = null;
-    private Color textureColor = Color.YELLOW;
+    private String saddle = null;
+    private String barding = null;
+    private String gradientSet = null;
+    private String gradientId = null;
 
     public TameableMountComponent(){
     }
@@ -52,16 +65,43 @@ public class TameableMountComponent implements Component<EntityStore> {
 
     public TameableMountComponent(TameableMountComponent other){
         this.isTame = other.isTame;
-        //this.owner = other.owner;
         this.tamingProgress = other.tamingProgress;
         this.saddle = other.saddle;
         this.barding = other.barding;
-        this.textureColor = other.textureColor;
+        this.gradientId = other.gradientId;
+        this.gradientSet = other.gradientSet;
     }
 
-    public void tame(PlayerRef player){
-        this.isTame = true;
-        //this.owner = player;
+    public String getSaddle(){
+        return this.saddle;
+    }
+
+    public String getBarding(){
+        return this.barding;
+    }
+
+    public String getGradientSet(){
+        return this.gradientSet;
+    }
+
+    public String getGradientId(){
+        return this.gradientId;
+    }
+
+    public void setGradientSet(String gradientSet){
+        this.gradientSet = gradientSet;
+    }
+
+    public void setGradientId(String gradientId){
+        this.gradientId = gradientId;
+    }
+
+    public void setAttachment(String slot, String attachment) {
+        switch (slot) {
+            case "Barding" -> this.barding = attachment;
+            case "Saddle"  -> this.saddle = attachment;
+            default -> throw new IllegalArgumentException("Unknown slot: " + slot);
+        }
     }
 
     @Nullable
