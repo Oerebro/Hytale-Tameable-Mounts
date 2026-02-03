@@ -10,6 +10,9 @@
       "Value": 7,
       "Description": "The wander radius of the NPC."
     },
+    "IsTamed": {
+      "Value": false
+    },
     "BardingItems": {
       "Value": [ "Rock_Bedrock" ],
       "TypeHint": "String",
@@ -2319,8 +2322,9 @@
         ]
       },
       {
+        "Enabled": {"Compute": "IsTamed"},
         "Continue": true,
-        "Description": "Defaul interactable to false, so the following blocks dont need to disable",
+        "Description": "Default interactable to false, so the following blocks dont need to disable",
         "Sensor": {
           "Type": "Any"
         },
@@ -2328,6 +2332,10 @@
           {
             "Type": "SetInteractable",
             "Interactable": false
+          },
+          {
+            "Type": "TestAction",
+            "Content": "IsTamed"
           }
         ]
       },

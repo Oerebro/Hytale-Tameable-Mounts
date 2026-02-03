@@ -21,7 +21,7 @@
     "IsMountable": true,
     "IsUntamed": false,
 
-    "MountAnchorY": 1.9,
+    "MountAnchorY": 1.6,
     "AlertedTimeoutReaction": [1,5],
     "AlertedTimeoutGiveUp": [1,3],
     "ChanceToTurnFriendly": 25,

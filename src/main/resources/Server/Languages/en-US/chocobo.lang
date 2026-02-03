@@ -5,6 +5,17 @@ interactionHints.tame = Press [{key}] to tame.
 itemName.Gysahl.Golden = Golden Gysahl Green
 itemName.Gysahl = Gysahl Green
 
+itemName.Gysahl_Seeds = Gysahl Seeds
+itemName.Golden_Gysahl_Seeds= Golden_Gysahl Seeds
+itemName.Gysahl_Seeds_Eternal = Gysahl Seeds (Eternal)
+itemName.Golden_Gysahl_Seeds_Eternal = Golden Gysahl Seeds (Eternal)
+
+
+blockName.Gysahl.final = Gysahl Green
+
 # === itemDescriptions ===
-itemDescription.Gysahl.Golden = A legendary Chocobo snack, said to be loved even by Red Comet.
+itemDescription.Golden_Gysahl = A legendary Chocobo snack, said to be loved even by Red Comet.
 itemDescription.Gysahl = A Chocobo's favorite snack.
+
+itemDescription.Gysahl_Seeds = Grows Gysahl Greens
+itemDescription.Golden_Gysahl_Seeds = Grows Golden Gysahl

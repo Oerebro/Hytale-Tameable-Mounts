@@ -5,6 +5,7 @@ import com.hypixel.hytale.component.query.Query;
 import com.hypixel.hytale.component.system.RefSystem;
 import com.hypixel.hytale.component.system.tick.TickingSystem;
 import com.hypixel.hytale.math.shape.Box;
+import com.hypixel.hytale.protocol.ColorLight;
 import com.hypixel.hytale.protocol.ModelTrail;
 import com.hypixel.hytale.protocol.Vector3f;
 import com.hypixel.hytale.server.core.asset.type.model.config.*;
@@ -18,9 +19,16 @@ import com.hypixel.hytale.server.npc.entities.NPCEntity;
 import com.hypixel.hytale.server.npc.role.Role;
 import org.mounts.components.TameableMountComponent;
 import org.mounts.plugin.ChocoboPlugin;
-
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -41,54 +49,66 @@ public class MountInitSystem extends TickingSystem<EntityStore> {
         }
     }
 
-    public enum Dark_Fantasy_Cotton {
-        Black(1),
-        White(1),
-        Lime(1),
-        Turquoise(1),
-        Pink(1),
-        Orange(1),
-        Blue(3),
-        Brown(3),
-        Purple(3),
-        Red(7),
-        Green(7),
-        Yellow(70);
-
-        private final int weight; // higher = more likely
-
-        Dark_Fantasy_Cotton(int weight) {
-            this.weight = weight;
-        }
+    public static class MOUNT_COLORS {
 
         private static final Random RANDOM = new Random();
-        private static final int[] CUMULATIVE_WEIGHTS;
-        private static final Dark_Fantasy_Cotton[] VALUES = values();
-        private static final int TOTAL_WEIGHT;
+        private static final Map<String, Integer> colors = new LinkedHashMap<>();
+        private static int[] cumulativeWeights;
+        private static List<String> colorList = new ArrayList<>();
+        private static int totalWeight;
 
         static {
-            CUMULATIVE_WEIGHTS = new int[VALUES.length];
-            int sum = 0;
-            for (int i = 0; i < VALUES.length; i++) {
-                sum += VALUES[i].weight;
-                CUMULATIVE_WEIGHTS[i] = sum;
+            try (InputStream in = MOUNT_COLORS.class.getClassLoader().getResourceAsStream("MountColorRarity.config")) {
+                if (in == null) {
+                    ChocoboPlugin.getHytaleLogger().atSevere().log("Missing config for mount colors!");
+                } else {
+                    try (BufferedReader reader = new BufferedReader(new InputStreamReader(in, StandardCharsets.UTF_8))) {
+                        String line;
+                        while ((line = reader.readLine()) != null) {
+                            line = line.trim();
+                            if (line.isEmpty() || line.startsWith("#")) continue;
+                            String[] parts = line.split(",");
+                            if (parts.length != 2) continue;
+                            String name = parts[0].trim();
+                            int weight = Integer.parseInt(parts[1].trim());
+                            colors.put(name, weight);
+                        }
+                        rebuildWeights();
+                    }
+                }
+            } catch (IOException e) {
+                ChocoboPlugin.getHytaleLogger().atSevere().log("Error reading mount color config: " + e.getMessage());
             }
-            TOTAL_WEIGHT = sum;
         }
 
-        public static String getSet(){
-            return "Dark_Fantasy_Cotton";
+        private static void rebuildWeights() {
+            colorList = new ArrayList<>(colors.keySet());
+            cumulativeWeights = new int[colorList.size()];
+            int sum = 0;
+            for (int i = 0; i < colorList.size(); i++) {
+                sum += colors.get(colorList.get(i));
+                cumulativeWeights[i] = sum;
+            }
+            totalWeight = sum;
         }
 
         public static String getRandomColor() {
-            int r = RANDOM.nextInt(TOTAL_WEIGHT);
-            int index = Arrays.binarySearch(CUMULATIVE_WEIGHTS, r);
-            if (index < 0) {
-                index = -index - 1;
-            }
-            return VALUES[index].name();
+            if (colorList.isEmpty()) return null;
+            int r = RANDOM.nextInt(totalWeight);
+            int index = Arrays.binarySearch(cumulativeWeights, r);
+            if (index < 0) index = -index - 1;
+            return colorList.get(index);
+        }
+
+        public static Set<String> getAllColors() {
+            return colors.keySet();
+        }
+
+        public static int getWeight(String color) {
+            return colors.getOrDefault(color, 0);
         }
     }
+
 
 
     private final ResourceType<EntityStore, MountInitQueue> mountInitQueueResourceType;
@@ -119,9 +139,14 @@ public class MountInitSystem extends TickingSystem<EntityStore> {
             return;
         }
 
+
         TameableMountComponent mountComponent = new TameableMountComponent();
         //get entity from the store
         Holder<EntityStore> holder = store.removeEntity(ref,RemoveReason.UNLOAD);
+
+
+
+
         //remove components
         holder.tryRemoveComponent(TameableMountComponent.getComponentType());
         //add back components
@@ -129,14 +154,27 @@ public class MountInitSystem extends TickingSystem<EntityStore> {
         ref = store.addEntity(holder,AddReason.LOAD);
 
         //decide a random color from the set
-        setRandomColor(ref,store);
+        //this one doesnt work
+        //setRandomColor(ref,store);
+        decideColor(ref,store);
 
         //set attachment to default when spawning
         setModelAttachment(ref,"Barding","Default",store);
 
     }
 
+    public static void decideColor(Ref<EntityStore> ref,Store<EntityStore> store){
+        NPCEntity npc = store.getComponent(ref,NPCEntity.getComponentType());
+        String roleName = npc.getRoleName();
 
+        String color = MOUNT_COLORS.getRandomColor();
+
+        ModelAsset asset = ModelAsset.getAssetMap().getAsset(roleName+"_"+color);
+        if(asset == null){return;}
+
+        npc.setAppearance(ref,asset,store);
+
+    }
 
     public static void setModelAttachment(
             @Nonnull Ref<EntityStore> ref, @Nonnull String slot, @Nullable String attachment, @Nonnull ComponentAccessor<EntityStore> componentAccessor
@@ -174,38 +212,127 @@ public class MountInitSystem extends TickingSystem<EntityStore> {
         }
     }
 
+    //doesnt work, but I left it in in case I figure out a way to do it
+    public static Model createScaledTintedModel(
+            @Nonnull ModelAsset modelAsset, float scale, @Nullable Map<String, String> randomAttachmentIds, @Nullable Box overrideBoundingBox, boolean staticModel, String gradientSet, String gradientId
+    ) {
+        Objects.requireNonNull(modelAsset, "ModelAsset can't be null");
+        if (scale <= 0.0F) {
+            throw new IllegalArgumentException("Scale must be greater than 0");
+        } else {
+            Box boundingBox = overrideBoundingBox != null ? overrideBoundingBox : modelAsset.getBoundingBox();
+            Map<String, DetailBox[]> detailBoxes = modelAsset.getDetailBoxes();
+            float eyeHeight = modelAsset.getEyeHeight();
+            float crouchOffset = modelAsset.getCrouchOffset();
+            CameraSettings camera = modelAsset.getCamera();
+            PhysicsValues physicsValues = modelAsset.getPhysicsValues();
+            ModelParticle[] particles = modelAsset.getParticles();
+            ModelTrail[] trails = modelAsset.getTrails();
+            if (scale != 1.0F) {
+                boundingBox = boundingBox.clone().scale(scale);
+                if (detailBoxes != null) {
+                    HashMap<String, DetailBox[]> scaledDetailBoxes = new HashMap<>(detailBoxes.size());
+
+                    for (Map.Entry<String, DetailBox[]> entry : detailBoxes.entrySet()) {
+                        scaledDetailBoxes.put(entry.getKey(), Arrays.stream(entry.getValue()).map(v -> v.scaled(scale)).toArray(DetailBox[]::new));
+                    }
+
+                    detailBoxes = scaledDetailBoxes;
+                }
+
+                eyeHeight *= scale;
+                crouchOffset *= scale;
+                if (camera != null) {
+                    camera = camera.clone().scale(scale);
+                }
+
+                if (physicsValues != null) {
+                    physicsValues = new PhysicsValues(physicsValues);
+                    physicsValues.scale(scale);
+                }
+
+                if (particles != null) {
+                    ModelParticle[] scaledParticules = new ModelParticle[particles.length];
+
+                    for (int i = 0; i < particles.length; i++) {
+                        scaledParticules[i] = particles[i].clone().scale(scale);
+                    }
+
+                    particles = scaledParticules;
+                }
+
+                if (trails != null) {
+                    ModelTrail[] scaledTrails = new ModelTrail[trails.length];
+
+                    for (int i = 0; i < trails.length; i++) {
+                        ModelTrail trail = trails[i];
+                        ModelTrail scaledTrail = new ModelTrail(trail);
+                        if (trail.positionOffset != null) {
+                            scaledTrail.positionOffset = new Vector3f();
+                            scaledTrail.positionOffset.x = trail.positionOffset.x * scale;
+                            scaledTrail.positionOffset.y = trail.positionOffset.y * scale;
+                            scaledTrail.positionOffset.z = trail.positionOffset.z * scale;
+                        }
+
+                        scaledTrails[i] = scaledTrail;
+                    }
+
+                    trails = scaledTrails;
+                }
+            }
+
+
+            ModelAttachment[] attachments = modelAsset.getAttachments(randomAttachmentIds);
+            Map<String, ModelAsset.AnimationSet> animationSetMap = staticModel ? null : modelAsset.getAnimationSetMap();
+            return new Model(
+                    modelAsset.getId(),
+                    scale,
+                    randomAttachmentIds,
+                    attachments,
+                    boundingBox,
+                    modelAsset.getModel(),
+                    modelAsset.getTexture(),
+                    gradientSet,
+                    gradientId,
+                    eyeHeight,
+                    crouchOffset,
+                    animationSetMap,
+                    camera,
+                    new ColorLight((byte)0,(byte)0,(byte)0,(byte)0),
+                    particles,
+                    trails,
+                    physicsValues,
+                    detailBoxes,
+                    modelAsset.getPhobia(),
+                    modelAsset.getPhobiaModelAssetId()
+            );
+        }
+    }
+
+    //doesnt work, but I left it in in case I figure out a way to do it
     public static void setRandomColor(Ref<EntityStore> ref, Store<EntityStore> store){
         NPCEntity npc = store.getComponent(ref,NPCEntity.getComponentType());
         Role role = npc.getRole();
-        //String color = Dark_Fantasy_Cotton.getRandomColor();
-        String color = "Blue";
+        String color = MOUNT_COLORS.getRandomColor();
+        //String set = MOUNT_COLORS.getSet();
+        String set = "Fantasy_Cotton_Dark";
+        color = "Black";
 
-        Model asset = store.getComponent(ref,ModelComponent.getComponentType()).getModel();
-        Model newAsset = new Model(
-                asset.getModelAssetId(),
-                asset.getScale(),
-                asset.getRandomAttachmentIds(),
-                asset.getAttachments(),
-                asset.getBoundingBox(),
-                asset.getModel(),
-                asset.getTexture(),
-                "Dark_Fantasy_Cotton",
-                "Blue",
-                asset.getEyeHeight(),
-                asset.getCrouchOffset(),
-                asset.getAnimationSetMap(),
-                asset.getCamera(),
-                asset.getLight(),
-                asset.getParticles(),
-                asset.getTrails(),
-                asset.getPhysicsValues(),
-                asset.getDetailBoxes(),
-                asset.getPhobia(),
-                asset.getPhobiaModelAssetId()
+        Model model = store.getComponent(ref,ModelComponent.getComponentType()).getModel();
+        ModelAsset modelAsset = ModelAsset.getAssetMap().getAsset(model.getModelAssetId());
+        modelAsset = ModelAsset.getAssetMap().getAsset("Chocobo_Black");
+        assert modelAsset != null;
+        Model newModel = createScaledTintedModel(
+                modelAsset,
+                model.getScale(),
+                modelAsset.generateRandomAttachmentIds(),
+                null,
+                false,
+                set,
+                color
         );
 
-        store.putComponent(ref, ModelComponent.getComponentType(), new ModelComponent(newAsset));
-
+        store.putComponent(ref, ModelComponent.getComponentType(), new ModelComponent(newModel));
         System.out.println("Color should be: "+color);
     }
 

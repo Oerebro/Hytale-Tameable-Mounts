@@ -300,8 +300,8 @@
                 "textureLayout": {
                   "front": {
                     "offset": {"x": 16, "y": 45},
-                    "mirror": {"x": true, "y": true},
-                    "angle": 270
+                    "mirror": {"x": false, "y": false},
+                    "angle": 90
                   }
                 },
                 "unwrapMode": "custom",
@@ -317,7 +317,7 @@
     {
       "id": "12",
       "name": "Head",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": 0, "y": 0, "z": 0.05204},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -336,7 +336,7 @@
         {
           "id": "13",
           "name": "Head-Armor",
-          "position": {"x": 0, "y": 51.57688, "z": -13.03001},
+          "position": {"x": 0, "y": 51.57688, "z": -3.53001},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
@@ -359,8 +359,8 @@
               },
               "front": {
                 "offset": {"x": 58, "y": 21},
-                "mirror": {"x": true, "y": true},
-                "angle": 90
+                "mirror": {"x": false, "y": false},
+                "angle": 270
               },
               "left": {
                 "offset": {"x": 19, "y": 21},
@@ -374,8 +374,8 @@
               },
               "bottom": {
                 "offset": {"x": 58, "y": 40},
-                "mirror": {"x": true, "y": true},
-                "angle": 270
+                "mirror": {"x": false, "y": false},
+                "angle": 90
               }
             },
             "unwrapMode": "custom",
@@ -411,8 +411,8 @@
                   },
                   "front": {
                     "offset": {"x": 18, "y": 11},
-                    "mirror": {"x": true, "y": true},
-                    "angle": 90
+                    "mirror": {"x": false, "y": false},
+                    "angle": 270
                   },
                   "left": {
                     "offset": {"x": 19, "y": 8},
@@ -426,8 +426,8 @@
                   },
                   "bottom": {
                     "offset": {"x": 24, "y": 10},
-                    "mirror": {"x": true, "y": true},
-                    "angle": 270
+                    "mirror": {"x": false, "y": false},
+                    "angle": 90
                   }
                 },
                 "unwrapMode": "custom",
@@ -441,7 +441,7 @@
         {
           "id": "15",
           "name": "Reigns-Upper",
-          "position": {"x": 18.40865, "y": 48.63128, "z": -8.21394},
+          "position": {"x": 18.40865, "y": 48.63128, "z": 1.28606},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "none",
@@ -503,8 +503,8 @@
                 "textureLayout": {
                   "front": {
                     "offset": {"x": 16, "y": 24},
-                    "mirror": {"x": true, "y": true},
-                    "angle": 270
+                    "mirror": {"x": false, "y": false},
+                    "angle": 90
                   }
                 },
                 "unwrapMode": "custom",
@@ -838,8 +838,8 @@
                   },
                   "front": {
                     "offset": {"x": 91, "y": 164},
-                    "mirror": {"x": true, "y": true},
-                    "angle": 90
+                    "mirror": {"x": false, "y": false},
+                    "angle": 270
                   },
                   "left": {
                     "offset": {"x": 33, "y": 164},
@@ -853,8 +853,8 @@
                   },
                   "bottom": {
                     "offset": {"x": 91, "y": 196},
-                    "mirror": {"x": true, "y": true},
-                    "angle": 270
+                    "mirror": {"x": false, "y": false},
+                    "angle": 90
                   }
                 },
                 "unwrapMode": "custom",

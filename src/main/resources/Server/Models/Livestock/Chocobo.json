@@ -2,98 +2,32 @@
   "Model": "NPC/Livestock/Chocobo/Models/Chocobo.blockymodel",
   "Texture": "NPC/Livestock/Chocobo/Models/Chocobo_Grey.png",
   "GradientId": "Yellow",
-  "GradientSet": "Flashy_Synthetic",
+  "GradientSet": "Fantasy_Cotton_Dark",
   "EyeHeight": 2.1,
   "CrouchOffset": -0.5,
   "MinScale": 1.2,
   "MaxScale": 1.5,
   "HitBox": {
-    "Max": { "X": 0.203125, "Y": 0.890625, "Z": 0.3046875 },
-    "Min": { "X": -0.203125, "Y": 0, "Z": -0.3046875 }
+    "Max": { "X": 0.2, "Y": 2.25, "Z": 0.1 },
+    "Min": { "X": -0.2, "Y": 0, "Z": -0.5 }
   },
   "PhysicsValues": { "Mass": 68 },
   "DetailBoxes": {
     "Head": [
       {
-        "Offset": {
-          "X": 0,
-          "Y": 0.703125,
-          "Z": 0.1484375
-        },
+        "Offset": { "X": -0.3125, "Y": 2.84375, "Z": 0.625 },
         "Box": {
-          "Max": {
-            "X": 0.171875,
-            "Y": 0.1875,
-            "Z": 0.328125
-          },
-          "Min": {
-            "X": -0.171875,
-            "Y": -0.1875,
-            "Z": -0.328125
-          }
+          "Max": { "X": -0.1875, "Y": 0.3125, "Z": 0.640625 },
+          "Min": { "X": -0.625, "Y": -0.3125, "Z": -0.640625 }
         }
       }
     ],
     "Neck": [
       {
-        "Offset": {
-          "X": 0,
-          "Y": 0.4765625,
-          "Z": 0.078125
-        },
+        "Offset": { "X": -0.25, "Y": 2.15625, "Z": 0.625 },
         "Box": {
-          "Max": {
-            "X": 0.171875,
-            "Y": 0.25,
-            "Z": 0.15625
-          },
-          "Min": {
-            "X": -0.171875,
-            "Y": -0.25,
-            "Z": -0.15625
-          }
-        }
-      }
-    ],
-    "Body": [
-      {
-        "Offset": {
-          "X": 0,
-          "Y": 0.2109375,
-          "Z": -0.0390625
-        },
-        "Box": {
-          "Max": {
-            "X": 0.1640625,
-            "Y": 0.359375,
-            "Z": 0.2578125
-          },
-          "Min": {
-            "X": -0.1640625,
-            "Y": -0.359375,
-            "Z": -0.2578125
-          }
-        }
-      }
-    ],
-    "Legs": [
-      {
-        "Offset": {
-          "X": 0,
-          "Y": -0.1328125,
-          "Z": 0.234375
-        },
-        "Box": {
-          "Max": {
-            "X": 0.1640625,
-            "Y": 0.265625,
-            "Z": 0.1640625
-          },
-          "Min": {
-            "X": -0.1640625,
-            "Y": -0.265625,
-            "Z": -0.1640625
-          }
+          "Max": { "X": -0.125, "Y": 0.359375, "Z": 0.53125 },
+          "Min": { "X": -0.5, "Y": -0.359375, "Z": -0.53125 }
         }
       }
     ]
@@ -447,6 +381,10 @@
     {
       "Model": "NPC/Livestock/Chocobo/Models/Attachments/Legs.blockymodel",
       "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Chocobo_Defaults.png"
+    },
+    {
+      "Model": "NPC/Livestock/Chocobo/Models/Attachments/Beak.blockymodel",
+      "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Chocobo_Defaults.png"
     }
   ],
   "RandomAttachmentSets": {
@@ -468,6 +406,20 @@
       "Default": {
         "Model": "NPC/Livestock/Chocobo/Models/Attachments/Default.blockymodel",
         "Texture": "NPC/Livestock/Chocobo/Models/Chocobo.png"
+      }
+    },
+    "Feathers": {
+      "Default": {
+        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Feathers/Default.blockymodel",
+        "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Feathers/Default.png",
+        "GradientSet": "Fantasy_Cotton_Dark",
+        "GradientId": "Yellow"
+      },
+      "Doki": {
+        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Feathers/Doki.blockymodel",
+        "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Feathers/Doki.png",
+        "GradientSet": "Fantasy_Cotton_Dark",
+        "GradientId": "Yellow"
       }
     }
   }
