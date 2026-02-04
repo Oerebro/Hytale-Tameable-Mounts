@@ -2322,7 +2322,6 @@
         ]
       },
       {
-        "Enabled": {"Compute": "IsTamed"},
         "Continue": true,
         "Description": "Default interactable to false, so the following blocks dont need to disable",
         "Sensor": {
@@ -2332,10 +2331,6 @@
           {
             "Type": "SetInteractable",
             "Interactable": false
-          },
-          {
-            "Type": "TestAction",
-            "Content": "IsTamed"
           }
         ]
       },
@@ -2365,7 +2360,7 @@
                   {
                     "Type": "SetInteractable",
                     "Interactable": true,
-                    "Hint": "server.interactionHints.equipBarding"
+                    "Hint": "chocobo.interactionHints.equipBarding"
                   }
                 ]
               },

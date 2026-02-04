@@ -1,0 +1,87 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Leaves_Block",
+      "position": {"x": 0, "y": 0, "z": 0},
+      "orientation": {"x": -0.17776, "y": 0.56658, "z": 0.2046, "w": 0.77815},
+      "shape": {
+        "type": "quad",
+        "offset": {"x": 0, "y": 6, "z": 0},
+        "stretch": {"x": 0.73791, "y": 1, "z": 1},
+        "settings": {
+          "isPiece": false,
+          "size": {"x": 7, "y": 13},
+          "normal": "+Z"
+        },
+        "textureLayout": {
+          "front": {
+            "offset": {"x": 56, "y": 4},
+            "mirror": {"x": false, "y": false},
+            "angle": 0
+          }
+        },
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": true,
+        "shadingMode": "flat"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Leaves_Block",
+      "position": {"x": 0, "y": 0, "z": 0},
+      "orientation": {"x": 0.01492, "y": 0.98675, "z": 0.14738, "w": -0.06622},
+      "shape": {
+        "type": "quad",
+        "offset": {"x": 0, "y": 6, "z": 0},
+        "stretch": {"x": 0.73791, "y": 1, "z": 1},
+        "settings": {
+          "isPiece": false,
+          "size": {"x": 7, "y": 13},
+          "normal": "+Z"
+        },
+        "textureLayout": {
+          "front": {
+            "offset": {"x": 56, "y": 4},
+            "mirror": {"x": false, "y": false},
+            "angle": 0
+          }
+        },
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": true,
+        "shadingMode": "flat"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Leaves_Block",
+      "position": {"x": 0, "y": -1.0709, "z": 0},
+      "orientation": {"x": -0.16481, "y": -0.48817, "z": -0.1467, "w": 0.8444},
+      "shape": {
+        "type": "quad",
+        "offset": {"x": 0, "y": 6, "z": 0},
+        "stretch": {"x": 0.73791, "y": 0.88518, "z": 1},
+        "settings": {
+          "isPiece": false,
+          "size": {"x": 7, "y": 13},
+          "normal": "+Z"
+        },
+        "textureLayout": {
+          "front": {
+            "offset": {"x": 56, "y": 4},
+            "mirror": {"x": false, "y": false},
+            "angle": 0
+          }
+        },
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": true,
+        "shadingMode": "flat"
+      }
+    }
+  ],
+  "format": "character",
+  "lod": "auto"
+}

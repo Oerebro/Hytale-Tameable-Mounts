@@ -1,0 +1,40 @@
+{
+    "Parent":  "Chocobo",
+    "GradientId":  "Yellow",
+    "RandomAttachmentSets":  {
+                                 "Barding":  {
+                                                 "Default":  {
+                                                                 "Model":  "NPC/Livestock/Chocobo/Models/Attachments/Default.blockymodel",
+                                                                 "Texture":  "NPC/Livestock/Chocobo/Models/Chocobo.png"
+                                                             },
+                                                 "Common":  {
+                                                                "Model":  "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.blockymodel",
+                                                                "Texture":  "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.png"
+                                                            },
+                                                 "Dragoon":  {
+                                                                 "Model":  "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.blockymodel",
+                                                                 "Texture":  "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.png"
+                                                             }
+                                             },
+                                 "Saddle":  {
+                                                "Default":  {
+                                                                "Model":  "NPC/Livestock/Chocobo/Models/Attachments/Default.blockymodel",
+                                                                "Texture":  "NPC/Livestock/Chocobo/Models/Chocobo.png"
+                                                            }
+                                            },
+                                 "Feathers":  {
+                                                  "Default":  {
+                                                                  "Model":  "NPC/Livestock/Chocobo/Models/Attachments/Feathers/Default.blockymodel",
+                                                                  "Texture":  "NPC/Livestock/Chocobo/Models/Attachments/Feathers/Default.png",
+                                                                  "GradientSet":  "Fantasy_Cotton_Dark",
+                                                                  "GradientId":  "Yellow"
+                                                              },
+                                                  "Doki":  {
+                                                               "Model":  "NPC/Livestock/Chocobo/Models/Attachments/Feathers/Doki.blockymodel",
+                                                               "Texture":  "NPC/Livestock/Chocobo/Models/Attachments/Feathers/Doki.png",
+                                                               "GradientSet":  "Fantasy_Cotton_Dark",
+                                                               "GradientId":  "Yellow"
+                                                           }
+                                              }
+                             }
+}

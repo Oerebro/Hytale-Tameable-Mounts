@@ -1,0 +1,95 @@
+{
+  "TranslationProperties": {
+    "Name": "chocobo.itemName.Gysahl_Seeds_Eternal",
+    "Description": "chocobo.itemDescription.Gysahl_Seeds"
+  },
+  "Quality": "Uncommon",
+  "Categories": [
+    "Blocks.Plants"
+  ],
+  "Interactions": {
+    "Secondary": "Seed_Condition"
+  },
+  "InteractionVars": {
+    "SeedId": {
+      "Interactions": [
+        {
+          "Parent": "Seed_Place",
+          "BlockTypeToPlace": "Gysahl_Block"
+        }
+      ]
+    }
+  },
+  "Model": "Resources/Plants/SeedBag.blockymodel",
+  "Texture": "Resources/Ingredients/SeedBag_Textures/Gysahl_Seeds.png",
+  "PlayerAnimationsId": "Item",
+  "Icon": "Icons/Items/Gysahl/Gysahl_Seeds.png",
+  "IconProperties": {
+    "Scale": 1.1,
+    "Rotation": [
+      0,
+      30,
+      15
+    ],
+    "Translation": [
+      2.5,
+      -11
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "Seeds"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "Recipe": {
+    "TimeSeconds": 0,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 20
+      },
+      {
+        "ItemId": "Gysahl_Green",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Gysahl_Seeds",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Gysahl_Seeds_Eternal",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "RequiredTierLevel": 2,
+        "Type": "Crafting",
+        "Id": "Farmingbench",
+        "Categories": [
+          "Seeds"
+        ]
+      }
+    ],
+    "RequiredMemoriesLevel": 2
+  },
+  "ItemLevel": 7,
+  "Scale": 1.0,
+  "Particles": [
+    {
+      "SystemId": "Seeds_Eternal",
+      "Scale": 0.2,
+      "PositionOffset": {
+        "Y": 0.2
+      }
+    }
+  ]
+}

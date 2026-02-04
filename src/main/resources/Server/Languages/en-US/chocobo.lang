@@ -1,17 +1,25 @@
 # === interactionHints ===
 interactionHints.tame = Press [{key}] to tame.
+interactionHints.equipBarding = Press [{key}] to equip Barding.
 
 # === itemNames ===
-itemName.Gysahl.Golden = Golden Gysahl Green
+itemName.Golden_Gysahl = Golden Gysahl
 itemName.Gysahl = Gysahl Green
 
 itemName.Gysahl_Seeds = Gysahl Seeds
-itemName.Golden_Gysahl_Seeds= Golden_Gysahl Seeds
+itemName.Golden_Gysahl_Seeds= Golden Gysahl Seeds
 itemName.Gysahl_Seeds_Eternal = Gysahl Seeds (Eternal)
 itemName.Golden_Gysahl_Seeds_Eternal = Golden Gysahl Seeds (Eternal)
 
 
 blockName.Gysahl.final = Gysahl Green
+blockName.Golden_Gysahl.final = Golden Gysahl
+
+item.Barding.Common.name = Leather Barding
+item.Barding.Common.description = A common barding for racing Chocobos
+
+item.Barding.Dragoon.name = Dragoon Barding
+item.Barding.Dragoon.description = A barding inspired by Dragoons of old
 
 # === itemDescriptions ===
 itemDescription.Golden_Gysahl = A legendary Chocobo snack, said to be loved even by Red Comet.

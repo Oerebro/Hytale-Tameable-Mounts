@@ -1,0 +1,61 @@
+{
+  "TranslationProperties": {
+    "Name": "chocobo.itemName.Golden_Gysahl_Seeds_Eternal",
+    "Description": "chocobo.itemDescription.Golden_Gysahl_Seeds"
+  },
+  "Quality": "Rare",
+  "Categories": [
+    "Blocks.Plants"
+  ],
+  "Interactions": {
+    "Secondary": "Seed_Condition"
+  },
+  "InteractionVars": {
+    "SeedId": {
+      "Interactions": [
+        {
+          "Parent": "Seed_Place",
+          "BlockTypeToPlace": "Golden_Gysahl_Block"
+        }
+      ]
+    }
+  },
+  "Model": "Resources/Plants/SeedBag.blockymodel",
+  "Texture": "Resources/Ingredients/SeedBag_Textures/Golden_Gysahl_Seeds.png",
+  "PlayerAnimationsId": "Item",
+  "Icon": "Icons/Items/Gysahl/Golden_Gysahl_Seeds.png",
+  "IconProperties": {
+    "Scale": 1.1,
+    "Rotation": [
+      0,
+      30,
+      15
+    ],
+    "Translation": [
+      2.5,
+      -11
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "Seeds"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "ItemLevel": 7,
+  "Scale": 1.0,
+  "Particles": [
+    {
+      "SystemId": "Seeds_Eternal",
+      "Scale": 0.2,
+      "PositionOffset": {
+        "Y": 0.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "TranslationProperties": {
+    "Name": "chocobo.itemName.Gysahl_Seeds",
+    "Description": "chocobo.itemDescription.Gysahl_Seeds"
+  },
+  "Parent": "Template_Seeds",
+  "Quality": "Junk",
+  "InteractionVars": {
+    "SeedId": {
+      "Interactions": [
+        {
+          "Parent": "Seed_Place",
+          "BlockTypeToPlace": "Gysahl_Block"
+        }
+      ]
+    }
+  },
+  "Texture": "Resources/Ingredients/SeedBag_Textures/Gysahl_Seeds.png",
+  "Icon": "Icons/Items/Gysahl/Gysahl_Seeds.png",
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      0.0,
+      30.0,
+      15.0
+    ],
+    "Translation": [
+      2.5,
+      -11.0
+    ]
+  },
+  "Recipe": {
+    "TimeSeconds": 0,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 2
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Plant_Seeds_Lettuce",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Farmingbench",
+        "Categories": [
+          "Seeds"
+        ]
+      }
+    ]
+  },
+  "ItemLevel": 3
+}

@@ -1,0 +1,12 @@
+{
+  "Parent": "Common_Barding",
+  "TranslationProperties": {
+    "Name": "chocobo.item.Barding.Dragoon.name",
+    "Description": "item.Barding.Dragoon.description"
+  },
+  "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.png",
+  "Model": "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.blockymodel",
+  "Icon": "Icons/Items/Bardings/Dragoon.png",
+  "Quality": "Common",
+  "DropOnDeath": true
+}

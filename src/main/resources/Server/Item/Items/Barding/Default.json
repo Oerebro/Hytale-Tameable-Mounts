@@ -1,0 +1,23 @@
+{
+  "TranslationProperties": {
+    "Name": "chocobo.item.Barding.Common.name",
+    "Description": "item.Barding.Common.description"
+  },
+  "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.png",
+  "Model": "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.blockymodel",
+  "Icon": "Icons/Items/Bardings/Common.png",
+  "IconProperties": {
+    "Scale": 0.7,
+    "Translation": [
+      -1.2,
+      -5.4
+    ],
+    "Rotation": [
+      40.5,
+      45,
+      348.8
+    ]
+  },
+  "Quality": "Common",
+  "DropOnDeath": true
+}

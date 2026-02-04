@@ -1,0 +1,24 @@
+{
+  "TranslationProperties": {
+    "Name": "chocobo.itemName.Golden_Gysahl",
+    "Description": "chocobo.itemDescription.Golden_Gysahl"
+  },
+  "Parent": "Template_Crop_Item",
+  "Icon": "Icons/Items/Gysahl/Golden_Gysahl.png",
+  "IconProperties": {
+    "Scale": 0.7,
+    "Translation": [
+      -1.2,
+      -5.4
+    ],
+    "Rotation": [
+      40.5,
+      45,
+      348.8
+    ]
+  },
+  "Texture": "Resources/Ingredients/Golden_Gysahl.png",
+  "Model": "Resources/Ingredients/Gysahl.blockymodel",
+  "Quality": "Common",
+  "DropOnDeath": true
+}
