@@ -1,0 +1,23 @@
+{
+  "Layers": [
+    {
+      "Files": [
+        "Sounds/NPC/Livestock/Chocobo/coo.ogg",
+        "Sounds/NPC/Livestock/Chocobo/woheeho.ogg"
+      ],
+      "RandomSettings": {
+        "MinPitch": -3.8631371386483475,
+        "MaxPitch": 0,
+        "MinVolume": -0.9151498112135024
+      },
+      "Probability": 15,
+      "StartDelay": 0.5
+    }
+  ],
+  "MaxInstance": 5,
+  "Volume": -13.999999999999996,
+  "Pitch": -0.1,
+  "PreventSoundInterruption": true,
+  "AudioCategory": "AudioCat_NPC_Chocobo",
+  "Parent": "SFX_Attn_Moderate"
+}
