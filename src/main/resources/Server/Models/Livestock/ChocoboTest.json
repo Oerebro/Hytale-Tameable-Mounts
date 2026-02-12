@@ -37,7 +37,7 @@
       "Animations": [
         {
           "Animation": "NPC/Livestock/Chocobo/Animations/Idle.blockyanim",
-          "SoundEventId": "SFX_Chocobo_Idle",
+          "SoundEventId": "SFX_Horse_Idle",
           "Speed": 1
         }
       ]
@@ -46,7 +46,7 @@
       "Animations": [
         {
           "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
-          "SoundEventId": "SFX_Chocobo_Run",
+          "SoundEventId": "SFX_Horse_Idle",
           "Speed": 1
         }
       ]
@@ -62,7 +62,6 @@
       "Animations": [
         {
           "Animation": "NPC/Livestock/Chocobo/Animations/Gallop.blockyanim",
-          "SoundEventId": "SFX_Chocobo_Run",
           "Speed": 1
         }
       ]
@@ -134,7 +133,7 @@
         {
           "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
           "Looping": false,
-          "SoundEventId": "SFX_Chocobo_Alerted"
+          "SoundEventId": "SFX_Horse_Alerted"
         }
       ]
     },
@@ -151,13 +150,13 @@
           "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
           "BlendingDuration": 0.1,
           "Looping": false,
-          "SoundEventId": "SFX_Chocobo_Hurt"
+          "SoundEventId": "SFX_Horse_Hurt"
         },
         {
           "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
           "BlendingDuration": 0.1,
           "Looping": false,
-          "SoundEventId": "SFX_Chocobo_Hurt"
+          "SoundEventId": "SFX_Horse_Hurt"
         }
       ]
     },
@@ -166,7 +165,7 @@
         {
           "Animation": "NPC/Livestock/Chocobo/Animations/Walk.blockyanim",
           "Looping": false,
-          "SoundEventId": "SFX_Chocobo_Death"
+          "SoundEventId": "SFX_Horse_Death"
         }
       ]
     },
@@ -181,7 +180,8 @@
     "Sleep": {
       "Animations": [
         {
-          "Animation": "NPC/Livestock/Chocobo/Animations/Sleep.blockyanim"
+          "Animation": "NPC/Livestock/Chocobo/Animations/Sleep.blockyanim",
+          "SoundEventId": "SFX_Horse_Sleep"
         }
       ]
     },
@@ -190,7 +190,7 @@
         {
           "Animation": "NPC/Livestock/Chocobo/Animations/Wake.blockyanim",
           "Looping": false,
-          "SoundEventId": "SFX_Chocobo_Wake"
+          "SoundEventId": "SFX_Horse_Wake"
         }
       ]
     },
@@ -379,37 +379,9 @@
   },
   "RandomAttachmentSets": {
     "Barding": {
-      "Default": {
-        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Default.blockymodel",
-        "Texture": "NPC/Livestock/Chocobo/Models/Chocobo.png"
-      },
       "Common": {
-        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.blockymodel",
-        "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.png"
-      },
-      "Dragoon": {
-        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.blockymodel",
-        "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.png"
-      }
-    },
-    "Saddle": {
-      "Default": {
-        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Default.blockymodel",
-        "Texture": "NPC/Livestock/Chocobo/Models/Chocobo.png"
-      }
-    },
-    "Feathers": {
-      "Default": {
-        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Feathers/Default.blockymodel",
-        "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Feathers/Default.png",
-        "GradientSet": "Fantasy_Cotton_Dark",
-        "GradientId": "Yellow"
-      },
-      "Doki": {
-        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Feathers/Doki.blockymodel",
-        "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Feathers/Doki.png",
-        "GradientSet": "Fantasy_Cotton_Dark",
-        "GradientId": "Yellow"
+        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Bardings/Whitemage_Barding.blockymodel",
+        "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Bardings/Whitemage_Barding.png"
       }
     }
   }

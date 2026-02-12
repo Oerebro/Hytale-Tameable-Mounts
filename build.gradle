@@ -5,6 +5,16 @@ plugins {
 
 import org.gradle.internal.os.OperatingSystem
 
+tasks.processResources {
+    exclude '**/*.bat'
+    exclude '**/*.ps1'
+    exclude '**/Backup/**'
+}
+
+tasks.jar {
+    exclude '**/Backups/**'
+}
+
 ext {
     if (project.hasProperty('hytale_home')) {
         hytaleHome = project.findProperty('hytale_home')

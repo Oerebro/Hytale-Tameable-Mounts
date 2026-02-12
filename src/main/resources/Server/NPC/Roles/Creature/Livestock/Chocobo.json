@@ -4,6 +4,7 @@
   "Modify": {
     "Appearance": "Chocobo",
     "AttitudeGroup": "MountUntamed",
+    "TameSFX": "SFX_Chocobo_Wooheehoo",
     "FlockArray": [
       "Horse",
       "Horse_Foal"

@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Neck-Upper",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": 0, "y": 76.02294, "z": -29.35004},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -26,35 +26,20 @@
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
-            "offset": {"x": 18.13361, "y": -16, "z": 1},
-            "stretch": {"x": 1, "y": 1, "z": 1},
+            "offset": {"x": 26.63361, "y": -14, "z": 2},
+            "stretch": {"x": 0.95625, "y": 1, "z": 0.96875},
             "settings": {
               "isPiece": false,
-              "size": {"x": 18, "y": 33, "z": 16}
+              "size": {"x": 0, "y": 33, "z": 16}
             },
             "textureLayout": {
-              "back": {
-                "offset": {"x": 79, "y": 16},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
               "right": {
                 "offset": {"x": 113, "y": 16},
                 "mirror": {"x": true, "y": false},
                 "angle": 0
               },
-              "front": {
-                "offset": {"x": 112, "y": 16},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
               "left": {
                 "offset": {"x": 97, "y": 16},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "bottom": {
-                "offset": {"x": 109, "y": 67},
                 "mirror": {"x": false, "y": false},
                 "angle": 0
               }
@@ -67,178 +52,106 @@
           "children": [
             {
               "id": "3",
-              "name": "cube--C1",
-              "position": {"x": -9, "y": 13.44095, "z": 8.41949},
-              "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
+              "name": "Neck-Upper-Armor--C1",
+              "position": {"x": -8.5, "y": -1, "z": -1},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
-                "type": "quad",
-                "offset": {"x": -1, "y": 4, "z": 0},
-                "stretch": {"x": 1, "y": 1, "z": 1},
+                "type": "box",
+                "offset": {"x": -8.5, "y": 1, "z": 1},
+                "stretch": {"x": 0.95625, "y": 1, "z": 0.96875},
                 "settings": {
                   "isPiece": false,
-                  "size": {"x": 10, "y": 8},
-                  "normal": "+Z",
+                  "size": {"x": 0, "y": 33, "z": 16},
                   "isStaticBox": true
                 },
                 "textureLayout": {
-                  "front": {
-                    "offset": {"x": 112, "y": 6},
+                  "right": {
+                    "offset": {"x": 113, "y": 16},
                     "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 97, "y": 16},
+                    "mirror": {"x": false, "y": false},
                     "angle": 0
                   }
                 },
                 "unwrapMode": "custom",
                 "visible": true,
-                "doubleSided": true,
+                "doubleSided": false,
                 "shadingMode": "flat"
               }
             },
             {
               "id": "4",
-              "name": "cube--C2",
-              "position": {"x": -9, "y": 5.44095, "z": 7.41949},
-              "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
+              "name": "Neck-Upper-Armor--C2",
+              "position": {"x": -8.5, "y": -4, "z": -1},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
-                "type": "quad",
-                "offset": {"x": -1, "y": 4, "z": -0.1},
-                "stretch": {"x": 1, "y": 1, "z": 1},
+                "type": "box",
+                "offset": {"x": 0, "y": 1, "z": 8.75},
+                "stretch": {"x": 0.95625, "y": 1, "z": 0.96875},
                 "settings": {
                   "isPiece": false,
-                  "size": {"x": 10, "y": 8},
-                  "normal": "+Z",
+                  "size": {"x": 18, "y": 33, "z": 0},
                   "isStaticBox": true
                 },
                 "textureLayout": {
+                  "back": {
+                    "offset": {"x": 114, "y": 16},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
                   "front": {
-                    "offset": {"x": 112, "y": 6},
+                    "offset": {"x": 132, "y": 16},
                     "mirror": {"x": true, "y": false},
                     "angle": 0
                   }
                 },
                 "unwrapMode": "custom",
                 "visible": true,
-                "doubleSided": true,
+                "doubleSided": false,
                 "shadingMode": "flat"
               }
             },
             {
               "id": "5",
-              "name": "cube--C3",
-              "position": {"x": 9, "y": 13.44095, "z": 8.41949},
-              "orientation": {"x": 0, "y": -0.70711, "z": 0, "w": 0.70711},
+              "name": "Neck-Upper-Armor--C3",
+              "position": {"x": -8.5, "y": -1, "z": -1},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
-                "type": "quad",
-                "offset": {"x": 1, "y": 4, "z": 0},
-                "stretch": {"x": 1, "y": 1, "z": 1},
+                "type": "box",
+                "offset": {"x": 0, "y": 2.5, "z": -6.75},
+                "stretch": {"x": 0.95625, "y": 1, "z": 0.96875},
                 "settings": {
                   "isPiece": false,
-                  "size": {"x": 10, "y": 8},
-                  "normal": "+Z",
+                  "size": {"x": 18, "y": 36, "z": 0},
                   "isStaticBox": true
                 },
                 "textureLayout": {
-                  "front": {
-                    "offset": {"x": 102, "y": 6},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            },
-            {
-              "id": "6",
-              "name": "cube--C4",
-              "position": {"x": 9, "y": 5.44095, "z": 7.41949},
-              "orientation": {"x": 0, "y": -0.70711, "z": 0, "w": 0.70711},
-              "shape": {
-                "type": "quad",
-                "offset": {"x": 1, "y": 4, "z": -0.2},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 10, "y": 8},
-                  "normal": "+Z",
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "front": {
-                    "offset": {"x": 102, "y": 6},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            },
-            {
-              "id": "7",
-              "name": "cube--C5",
-              "position": {"x": -9, "y": -4.55905, "z": 6.91949},
-              "orientation": {"x": 0, "y": 0.70711, "z": 0, "w": 0.70711},
-              "shape": {
-                "type": "quad",
-                "offset": {"x": -1, "y": 4, "z": -0.1},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 10, "y": 8},
-                  "normal": "+Z",
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "front": {
-                    "offset": {"x": 112, "y": 6},
+                  "back": {
+                    "offset": {"x": 98, "y": 13},
                     "mirror": {"x": true, "y": false},
                     "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            },
-            {
-              "id": "8",
-              "name": "cube--C6",
-              "position": {"x": 9, "y": -4.55905, "z": 6.91949},
-              "orientation": {"x": 0, "y": -0.70711, "z": 0, "w": 0.70711},
-              "shape": {
-                "type": "quad",
-                "offset": {"x": 1, "y": 4, "z": -0.3},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 10, "y": 8},
-                  "normal": "+Z",
-                  "isStaticBox": true
-                },
-                "textureLayout": {
+                  },
                   "front": {
-                    "offset": {"x": 102, "y": 6},
+                    "offset": {"x": 80, "y": 13},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   }
                 },
                 "unwrapMode": "custom",
                 "visible": true,
-                "doubleSided": true,
+                "doubleSided": false,
                 "shadingMode": "flat"
               }
             }
           ]
         },
         {
-          "id": "9",
+          "id": "6",
           "name": "Reigns-Lower",
-          "position": {"x": 10.02504, "y": 18.10833, "z": -11.88744},
+          "position": {"x": 0, "y": 1.45825, "z": -10.47934},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "none",
@@ -255,10 +168,10 @@
           },
           "children": [
             {
-              "id": "10",
+              "id": "7",
               "name": "reigns_lower--C1",
-              "position": {"x": -31.04669, "y": -9.13128, "z": 15.88193},
-              "orientation": {"x": 0.16807, "y": 0.68684, "z": 0.16807, "w": 0.68684},
+              "position": {"x": -21.02165, "y": 12.5188, "z": 18.97383},
+              "orientation": {"x": 0.13795, "y": 0.69352, "z": 0.13795, "w": 0.69352},
               "shape": {
                 "type": "quad",
                 "offset": {"x": 3.5, "y": -15, "z": 9.75},
@@ -283,10 +196,10 @@
               }
             },
             {
-              "id": "11",
+              "id": "8",
               "name": "reigns_lower--C2",
-              "position": {"x": 10.99661, "y": -9.13128, "z": 15.88193},
-              "orientation": {"x": 0.16807, "y": -0.68684, "z": -0.16807, "w": 0.68684},
+              "position": {"x": 21.02165, "y": 12.5188, "z": 18.97383},
+              "orientation": {"x": 0.13795, "y": -0.69352, "z": -0.13795, "w": 0.69352},
               "shape": {
                 "type": "quad",
                 "offset": {"x": -3.5, "y": -15, "z": 9.75},
@@ -300,8 +213,8 @@
                 "textureLayout": {
                   "front": {
                     "offset": {"x": 16, "y": 45},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 90
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
                   }
                 },
                 "unwrapMode": "custom",
@@ -315,9 +228,9 @@
       ]
     },
     {
-      "id": "12",
+      "id": "9",
       "name": "Head",
-      "position": {"x": 0, "y": 0, "z": 0.05204},
+      "position": {"x": 0, "y": 99.5, "z": -42.05204},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -334,114 +247,9 @@
       },
       "children": [
         {
-          "id": "13",
-          "name": "Head-Armor",
-          "position": {"x": 0, "y": 51.57688, "z": -3.53001},
-          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-          "shape": {
-            "type": "box",
-            "offset": {"x": 0, "y": -51.5, "z": 4},
-            "stretch": {"x": 1, "y": 1, "z": 1},
-            "settings": {
-              "isPiece": false,
-              "size": {"x": 21, "y": 19, "z": 39}
-            },
-            "textureLayout": {
-              "back": {
-                "offset": {"x": 19, "y": 21},
-                "mirror": {"x": false, "y": true},
-                "angle": 270
-              },
-              "right": {
-                "offset": {"x": 58, "y": 21},
-                "mirror": {"x": true, "y": false},
-                "angle": 0
-              },
-              "front": {
-                "offset": {"x": 58, "y": 21},
-                "mirror": {"x": false, "y": false},
-                "angle": 270
-              },
-              "left": {
-                "offset": {"x": 19, "y": 21},
-                "mirror": {"x": false, "y": false},
-                "angle": 0
-              },
-              "top": {
-                "offset": {"x": 19, "y": 0},
-                "mirror": {"x": false, "y": true},
-                "angle": 90
-              },
-              "bottom": {
-                "offset": {"x": 58, "y": 40},
-                "mirror": {"x": false, "y": false},
-                "angle": 90
-              }
-            },
-            "unwrapMode": "custom",
-            "visible": true,
-            "doubleSided": false,
-            "shadingMode": "flat"
-          },
-          "children": [
-            {
-              "id": "14",
-              "name": "Head-Armor--C1",
-              "position": {"x": 0, "y": 9, "z": -18.5},
-              "orientation": {"x": 0.38268, "y": 0, "z": 0, "w": 0.92388},
-              "shape": {
-                "type": "box",
-                "offset": {"x": 0, "y": 0, "z": 0},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 3, "y": 5, "z": 5},
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "back": {
-                    "offset": {"x": 23, "y": 13},
-                    "mirror": {"x": false, "y": true},
-                    "angle": 270
-                  },
-                  "right": {
-                    "offset": {"x": 24, "y": 8},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  },
-                  "front": {
-                    "offset": {"x": 18, "y": 11},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 270
-                  },
-                  "left": {
-                    "offset": {"x": 19, "y": 8},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "top": {
-                    "offset": {"x": 16, "y": 8},
-                    "mirror": {"x": false, "y": true},
-                    "angle": 90
-                  },
-                  "bottom": {
-                    "offset": {"x": 24, "y": 10},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 90
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": false,
-                "shadingMode": "flat"
-              }
-            }
-          ]
-        },
-        {
-          "id": "15",
-          "name": "Reigns-Upper",
-          "position": {"x": 18.40865, "y": 48.63128, "z": 1.28606},
+          "id": "10",
+          "name": "Whitemage-Hat",
+          "position": {"x": 0.76573, "y": 1.82606, "z": 29.66272},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "none",
@@ -458,13 +266,546 @@
           },
           "children": [
             {
+              "id": "11",
+              "name": "cube--C1",
+              "position": {"x": -0.75, "y": 10.5, "z": -5.25},
+              "orientation": {"x": 0.19509, "y": 0, "z": 0, "w": 0.98079},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0.25, "y": -2, "z": 0.25},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 26, "y": 13, "z": 26},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 179, "y": 107},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "right": {
+                    "offset": {"x": 231, "y": 107},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 180
+                  },
+                  "front": {
+                    "offset": {"x": 179, "y": 45},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 205, "y": 107},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 180
+                  },
+                  "top": {
+                    "offset": {"x": 179, "y": 57},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "bottom": {
+                    "offset": {"x": 179, "y": 57},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "12",
+              "name": "cube--C2",
+              "position": {"x": -0.75, "y": 10.5, "z": -5.25},
+              "orientation": {"x": 0.19509, "y": 0, "z": 0, "w": 0.98079},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 12.75, "y": -14.5, "z": 0.25},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 12, "z": 26},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 155, "y": 83},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 270
+                  },
+                  "left": {
+                    "offset": {"x": 155, "y": 57},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "13",
+              "name": "cube--C3",
+              "position": {"x": -0.75, "y": 10.5, "z": -5.25},
+              "orientation": {"x": 0.19509, "y": 0, "z": 0, "w": 0.98079},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -12.75, "y": -14.5, "z": 0.25},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 12, "z": 26},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 155, "y": 83},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 270
+                  },
+                  "left": {
+                    "offset": {"x": 155, "y": 57},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "14",
+              "name": "cube--C4",
+              "position": {"x": -0.75, "y": 19.62672, "z": 0.15399},
+              "orientation": {"x": 0.38268, "y": 0, "z": 0, "w": 0.92388},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": -8.05, "z": 0.15},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 22, "y": 6, "z": 22},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 181, "y": 101},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "right": {
+                    "offset": {"x": 173, "y": 81},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 270
+                  },
+                  "front": {
+                    "offset": {"x": 181, "y": 51},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 173, "y": 81},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 270
+                  },
+                  "top": {
+                    "offset": {"x": 181, "y": 59},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "bottom": {
+                    "offset": {"x": 181, "y": 59},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "15",
+              "name": "cube--C5",
+              "position": {"x": -1, "y": 12.32636, "z": -3.60732},
+              "orientation": {"x": -0.04362, "y": 0, "z": 0, "w": 0.99905},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0.975, "z": -0.425},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 22, "y": 22, "z": 12},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 203, "y": 81},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 180
+                  },
+                  "right": {
+                    "offset": {"x": 167, "y": 59},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 180
+                  },
+                  "front": {
+                    "offset": {"x": 181, "y": 59},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 167, "y": 81},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 203, "y": 101},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 180
+                  },
+                  "bottom": {
+                    "offset": {"x": 181, "y": 89},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
               "id": "16",
+              "name": "cube--C6",
+              "position": {"x": -1, "y": 16.95225, "z": 6.17962},
+              "orientation": {"x": 0.10887, "y": 0, "z": 0, "w": 0.99406},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": -3.75, "z": -2.75},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 22, "y": 20, "z": 9},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 203, "y": 80},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 180
+                  },
+                  "right": {
+                    "offset": {"x": 170, "y": 60},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 180
+                  },
+                  "front": {
+                    "offset": {"x": 181, "y": 60},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 170, "y": 80},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 203, "y": 94},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 180
+                  },
+                  "bottom": {
+                    "offset": {"x": 176, "y": 77},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "17",
+              "name": "cube--C7",
+              "position": {"x": -0.75, "y": 14.87562, "z": 8.03187},
+              "orientation": {"x": -0.19509, "y": 0, "z": 0, "w": 0.98079},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -0.5, "y": 2.75, "z": -1},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 14, "y": 8, "z": 10},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 16, "y": 11},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 180
+                  },
+                  "right": {
+                    "offset": {"x": 184, "y": 31},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 199, "y": 85},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 180
+                  },
+                  "left": {
+                    "offset": {"x": 183, "y": 31},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 0
+                  },
+                  "bottom": {
+                    "offset": {"x": 185, "y": 75},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            }
+          ]
+        },
+        {
+          "id": "18",
+          "name": "Head-Armor",
+          "position": {"x": 0, "y": -0.92312, "z": 0.46999},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": 0, "y": 0, "z": -19.41795},
+            "stretch": {"x": 1, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 21, "y": 19, "z": 0}
+            },
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 19, "y": 21},
+                "mirror": {"x": false, "y": true},
+                "angle": 270
+              },
+              "front": {
+                "offset": {"x": 19, "y": 21},
+                "mirror": {"x": false, "y": true},
+                "angle": 270
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "19",
+              "name": "Head-Armor--C1",
+              "position": {"x": 0, "y": 1, "z": 20.91795},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -10.5, "y": -1, "z": -1},
+                "stretch": {"x": 1, "y": 1, "z": 1.025},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 19, "z": 39},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 58, "y": 21},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 19, "y": 21},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "20",
+              "name": "Head-Armor--C2",
+              "position": {"x": 0, "y": 1, "z": 20.91795},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 10.5, "y": -1, "z": -1},
+                "stretch": {"x": 1, "y": 1, "z": 1.025},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 19, "z": 39},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 58, "y": 21},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 19, "y": 21},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "21",
+              "name": "Head-Armor--C3",
+              "position": {"x": 0, "y": 1, "z": 21.29295},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": -1, "z": 18.58205},
+                "stretch": {"x": 1, "y": 1, "z": 1.06},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 21, "y": 19, "z": 0},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 58, "y": 0},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 270
+                  },
+                  "front": {
+                    "offset": {"x": 58, "y": 21},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 90
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "22",
+              "name": "Head-Armor--C4",
+              "position": {"x": 0, "y": 1, "z": 20.41795},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": -10.5, "z": -1},
+                "stretch": {"x": 1, "y": 1, "z": 1.06},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 21, "y": 0, "z": 39},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "top": {
+                    "offset": {"x": 19, "y": 61},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 270
+                  },
+                  "bottom": {
+                    "offset": {"x": 58, "y": 61},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 90
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "23",
+              "name": "Head-Armor--C5",
+              "position": {"x": 0, "y": 1, "z": 20.91795},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 8.5, "z": -1},
+                "stretch": {"x": 1, "y": 1, "z": 1.025},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 21, "y": 0, "z": 39},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "top": {
+                    "offset": {"x": 19, "y": 0},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "bottom": {
+                    "offset": {"x": 58, "y": 0},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            }
+          ]
+        },
+        {
+          "id": "24",
+          "name": "Reigns-Upper",
+          "position": {"x": 0, "y": -4.09455, "z": 0.84084},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "none",
+            "offset": {"x": 0, "y": 0, "z": 0},
+            "stretch": {"x": 0, "y": 0, "z": 0},
+            "settings": {
+              "isPiece": false
+            },
+            "textureLayout": {},
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "25",
               "name": "reigns_upper--C1",
-              "position": {"x": -18.40865, "y": -64.72583, "z": -1.94522},
-              "orientation": {"x": 0.5, "y": 0.5, "z": 0.5, "w": 0.5},
+              "position": {"x": -1.88803, "y": 40.73423, "z": 2.05654},
+              "orientation": {"x": 0.37993, "y": 0.59637, "z": 0.37993, "w": 0.59637},
               "shape": {
                 "type": "quad",
-                "offset": {"x": 0, "y": 0, "z": -11.63803},
+                "offset": {"x": -43.7217, "y": -21.55353, "z": -9.75},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -486,13 +827,13 @@
               }
             },
             {
-              "id": "17",
+              "id": "26",
               "name": "reigns_upper--C2",
-              "position": {"x": -18.40865, "y": -64.72583, "z": -1.94522},
-              "orientation": {"x": 0.5, "y": -0.5, "z": -0.5, "w": 0.5},
+              "position": {"x": 1.88803, "y": 40.73423, "z": 2.05654},
+              "orientation": {"x": 0.37993, "y": -0.59637, "z": -0.37993, "w": 0.59637},
               "shape": {
                 "type": "quad",
-                "offset": {"x": 0, "y": 0, "z": -11.63803},
+                "offset": {"x": 43.7217, "y": -21.55353, "z": -9.75},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
@@ -503,8 +844,8 @@
                 "textureLayout": {
                   "front": {
                     "offset": {"x": 16, "y": 24},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 90
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
                   }
                 },
                 "unwrapMode": "custom",
@@ -518,9 +859,9 @@
       ]
     },
     {
-      "id": "18",
+      "id": "27",
       "name": "Neck",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": 39.01666, "y": 38.24384, "z": -20.13326},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -537,7 +878,7 @@
       },
       "children": [
         {
-          "id": "19",
+          "id": "28",
           "name": "Neck-Armor",
           "position": {"x": -9.24195, "y": -1.38117, "z": -6.87024},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
@@ -556,70 +897,14 @@
           },
           "children": [
             {
-              "id": "20",
-              "name": "cube--C1",
-              "position": {"x": -34.77471, "y": 6.63733, "z": -15.9965},
-              "orientation": {"x": -0.10757, "y": -0.69888, "z": 0.10757, "w": 0.69888},
-              "shape": {
-                "type": "quad",
-                "offset": {"x": -0.45106, "y": -1.43058, "z": 0},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 10, "y": 8},
-                  "normal": "-Z",
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "front": {
-                    "offset": {"x": 102, "y": 6},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            },
-            {
-              "id": "21",
-              "name": "cube--C2",
-              "position": {"x": -24.77471, "y": 6.63733, "z": -15.9965},
-              "orientation": {"x": -0.10757, "y": 0.69888, "z": -0.10757, "w": 0.69888},
-              "shape": {
-                "type": "quad",
-                "offset": {"x": 0.45106, "y": -1.43058, "z": 0},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 10, "y": 8},
-                  "normal": "-Z",
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "front": {
-                    "offset": {"x": 112, "y": 6},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            },
-            {
-              "id": "22",
-              "name": "armor_layer--C3",
-              "position": {"x": 20.30805, "y": 0, "z": 0},
+              "id": "29",
+              "name": "armor_layer--C1",
+              "position": {"x": 20.88305, "y": 3, "z": 0},
               "orientation": {"x": -0.19509, "y": 0, "z": 0, "w": 0.98079},
               "shape": {
                 "type": "box",
-                "offset": {"x": -50.08276, "y": 13.28885, "z": 4.91246},
-                "stretch": {"x": 1, "y": 1, "z": 1},
+                "offset": {"x": -50.65776, "y": 12.28885, "z": 5.91246},
+                "stretch": {"x": 1.0125, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
                   "size": {"x": 17, "y": 22, "z": 16},
@@ -627,13 +912,13 @@
                 },
                 "textureLayout": {
                   "back": {
-                    "offset": {"x": 81, "y": 65},
+                    "offset": {"x": 80, "y": 65},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "right": {
-                    "offset": {"x": 113, "y": 65},
-                    "mirror": {"x": true, "y": false},
+                    "offset": {"x": 97, "y": 65},
+                    "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
                   "front": {
@@ -646,215 +931,15 @@
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
-                  "bottom": {
-                    "offset": {"x": 109, "y": 67},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": false,
-                "shadingMode": "flat"
-              }
-            },
-            {
-              "id": "23",
-              "name": "cube--C4",
-              "position": {"x": -29.77471, "y": 1.13733, "z": -13.4965},
-              "orientation": {"x": -0.29697, "y": 0.36237, "z": -0.12301, "w": 0.87485},
-              "shape": {
-                "type": "quad",
-                "offset": {"x": -8, "y": 0, "z": 0},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 16, "y": 31},
-                  "normal": "+Z",
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "front": {
-                    "offset": {"x": 180, "y": 100},
-                    "mirror": {"x": true, "y": true},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            },
-            {
-              "id": "24",
-              "name": "cube--C5",
-              "position": {"x": -30.94628, "y": 29.63733, "z": -25.32493},
-              "orientation": {"x": 0.02015, "y": 0.38259, "z": 0.00835, "w": 0.92366},
-              "shape": {
-                "type": "quad",
-                "offset": {"x": -8.54335, "y": -8.8008, "z": 6.1697},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 8, "y": 15},
-                  "normal": "+Z",
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "front": {
-                    "offset": {"x": 172, "y": 49},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            },
-            {
-              "id": "25",
-              "name": "cube--C6",
-              "position": {"x": -28.60314, "y": 29.63733, "z": -25.32493},
-              "orientation": {"x": 0.02015, "y": -0.38259, "z": -0.00835, "w": 0.92366},
-              "shape": {
-                "type": "quad",
-                "offset": {"x": 8.50799, "y": -8.8008, "z": 6.20505},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 8, "y": 15},
-                  "normal": "+Z",
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "front": {
-                    "offset": {"x": 164, "y": 49},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            },
-            {
-              "id": "26",
-              "name": "cube--C7",
-              "position": {"x": -29.77471, "y": 1.13733, "z": -13.4965},
-              "orientation": {"x": -0.29697, "y": -0.36237, "z": 0.12301, "w": 0.87485},
-              "shape": {
-                "type": "quad",
-                "offset": {"x": 8, "y": 0, "z": 0},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 16, "y": 31},
-                  "normal": "+Z",
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "front": {
-                    "offset": {"x": 164, "y": 100},
-                    "mirror": {"x": false, "y": true},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "27",
-      "name": "Torso",
-      "position": {"x": 0, "y": 0, "z": 0},
-      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-      "shape": {
-        "type": "none",
-        "offset": {"x": 0, "y": 0, "z": 0},
-        "stretch": {"x": 0, "y": 0, "z": 0},
-        "settings": {
-          "isPiece": true
-        },
-        "textureLayout": {},
-        "unwrapMode": "custom",
-        "visible": true,
-        "doubleSided": false,
-        "shadingMode": "flat"
-      },
-      "children": [
-        {
-          "id": "28",
-          "name": "Torso-Container",
-          "position": {"x": -1.04583, "y": -1.14477, "z": 1.45473},
-          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-          "shape": {
-            "type": "none",
-            "offset": {"x": 0, "y": 0, "z": 0},
-            "stretch": {"x": 0, "y": 0, "z": 0},
-            "settings": {
-              "isPiece": false
-            },
-            "textureLayout": {},
-            "unwrapMode": "custom",
-            "visible": true,
-            "doubleSided": false,
-            "shadingMode": "flat"
-          },
-          "children": [
-            {
-              "id": "29",
-              "name": "Torso-Armor",
-              "position": {"x": 0, "y": 0, "z": 0},
-              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-              "shape": {
-                "type": "box",
-                "offset": {"x": 1.41222, "y": 2.64346, "z": -1.55392},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 38, "y": 32, "z": 58}
-                },
-                "textureLayout": {
-                  "back": {
-                    "offset": {"x": 32, "y": 164},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 90
-                  },
-                  "right": {
-                    "offset": {"x": 91, "y": 164},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  },
-                  "front": {
-                    "offset": {"x": 91, "y": 164},
+                  "top": {
+                    "offset": {"x": 60, "y": 19},
                     "mirror": {"x": false, "y": false},
                     "angle": 270
                   },
-                  "left": {
-                    "offset": {"x": 33, "y": 164},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "top": {
-                    "offset": {"x": 33, "y": 126},
-                    "mirror": {"x": false, "y": true},
-                    "angle": 90
-                  },
                   "bottom": {
-                    "offset": {"x": 91, "y": 196},
+                    "offset": {"x": 60, "y": 19},
                     "mirror": {"x": false, "y": false},
-                    "angle": 90
+                    "angle": 270
                   }
                 },
                 "unwrapMode": "custom",
@@ -869,8 +954,8 @@
     },
     {
       "id": "30",
-      "name": "Calf-Left",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "name": "Torso",
+      "position": {"x": 0, "y": 54.38404, "z": -0.49448},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -888,17 +973,34 @@
       "children": [
         {
           "id": "31",
-          "name": "Calf-Left-Container",
-          "position": {"x": 0, "y": 0, "z": 0},
+          "name": "Torso-Armor",
+          "position": {"x": -1.04583, "y": -1.14477, "z": 3.45473},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
-            "type": "none",
-            "offset": {"x": 0, "y": 0, "z": 0},
-            "stretch": {"x": 0, "y": 0, "z": 0},
+            "type": "box",
+            "offset": {"x": 1.41222, "y": 1.64346, "z": -33.05392},
+            "stretch": {"x": 0.9625, "y": 1, "z": 1},
             "settings": {
-              "isPiece": false
+              "isPiece": false,
+              "size": {"x": 38, "y": 32, "z": 0}
             },
-            "textureLayout": {},
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 32, "y": 164},
+                "mirror": {"x": true, "y": false},
+                "angle": 90
+              },
+              "front": {
+                "offset": {"x": 91, "y": 164},
+                "mirror": {"x": true, "y": true},
+                "angle": 90
+              },
+              "bottom": {
+                "offset": {"x": 33, "y": 196},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              }
+            },
             "unwrapMode": "custom",
             "visible": true,
             "doubleSided": false,
@@ -907,36 +1009,59 @@
           "children": [
             {
               "id": "32",
-              "name": "Calf-Left-Armor",
-              "position": {"x": 0, "y": 0, "z": 0},
+              "name": "Torso-Armor--C1",
+              "position": {"x": 0, "y": 1, "z": 29},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0, "y": -1.24691, "z": -0.0257},
-                "stretch": {"x": 1, "y": 1, "z": 1},
+                "offset": {"x": 0, "y": -17, "z": 0},
+                "stretch": {"x": 0.9625, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
-                  "size": {"x": 11, "y": 24, "z": 10}
+                  "size": {"x": 38, "y": 0, "z": 58},
+                  "isStaticBox": true
                 },
                 "textureLayout": {
-                  "back": {
-                    "offset": {"x": 110, "y": 184},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
+                  "top": {
+                    "offset": {"x": 33, "y": 196},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
                   },
+                  "bottom": {
+                    "offset": {"x": 91, "y": 196},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "33",
+              "name": "Torso-Armor--C2",
+              "position": {"x": 0, "y": 1, "z": 29},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 18.25, "y": -1, "z": 0},
+                "stretch": {"x": 0.9625, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 32, "z": 58},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
                   "right": {
-                    "offset": {"x": 120, "y": 184},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  },
-                  "front": {
-                    "offset": {"x": 131, "y": 184},
+                    "offset": {"x": 91, "y": 164},
                     "mirror": {"x": true, "y": false},
                     "angle": 0
                   },
                   "left": {
-                    "offset": {"x": 120, "y": 184},
-                    "mirror": {"x": true, "y": false},
+                    "offset": {"x": 33, "y": 164},
+                    "mirror": {"x": false, "y": false},
                     "angle": 0
                   }
                 },
@@ -944,47 +1069,81 @@
                 "visible": true,
                 "doubleSided": false,
                 "shadingMode": "flat"
-              },
-              "children": [
-                {
-                  "id": "33",
-                  "name": "cube--C1",
-                  "position": {"x": 0, "y": -0.81915, "z": -0.42642},
-                  "orientation": {"x": -0.19459, "y": 0.63688, "z": -0.17065, "w": 0.72622},
-                  "shape": {
-                    "type": "quad",
-                    "offset": {"x": -8.21882, "y": 3.30124, "z": -6.00069},
-                    "stretch": {"x": 1, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 21, "y": 24},
-                      "normal": "+Z",
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "front": {
-                        "offset": {"x": 212, "y": 83},
-                        "mirror": {"x": true, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "34",
+              "name": "Torso-Armor--C3",
+              "position": {"x": 0, "y": 1, "z": 29},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -18.25, "y": -1, "z": 0},
+                "stretch": {"x": 0.9625, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 32, "z": 58},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 91, "y": 164},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 33, "y": 164},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
                   }
-                }
-              ]
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "35",
+              "name": "Torso-Armor--C4",
+              "position": {"x": 0, "y": 1, "z": 29},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 15, "z": 0},
+                "stretch": {"x": 0.9625, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 38, "y": 0, "z": 58},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "top": {
+                    "offset": {"x": 33, "y": 126},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "bottom": {
+                    "offset": {"x": 91, "y": 126},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
             }
           ]
         }
       ]
     },
     {
-      "id": "34",
+      "id": "36",
       "name": "Calf-Right",
-      "position": {"x": 0, "y": 0, "z": 0},
-      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+      "position": {"x": 9.18078, "y": 12.53417, "z": 10.40994},
+      "orientation": {"x": 0.30071, "y": 0, "z": 0, "w": 0.95372},
       "shape": {
         "type": "none",
         "offset": {"x": 0, "y": 0, "z": 0},
@@ -1000,18 +1159,30 @@
       },
       "children": [
         {
-          "id": "35",
-          "name": "Calf-Right-Container",
-          "position": {"x": 0, "y": 0, "z": 0},
+          "id": "37",
+          "name": "Calf-Right-Armor",
+          "position": {"x": 0, "y": 2, "z": 0.25},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
-            "type": "none",
-            "offset": {"x": 0, "y": 0, "z": 0},
-            "stretch": {"x": 0, "y": 0, "z": 0},
+            "type": "box",
+            "offset": {"x": -5.5, "y": -0.60375, "z": -0.64267},
+            "stretch": {"x": 1, "y": 1, "z": 1},
             "settings": {
-              "isPiece": false
+              "isPiece": false,
+              "size": {"x": 0, "y": 24, "z": 10}
             },
-            "textureLayout": {},
+            "textureLayout": {
+              "right": {
+                "offset": {"x": 110, "y": 184},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              },
+              "left": {
+                "offset": {"x": 120, "y": 184},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              }
+            },
             "unwrapMode": "custom",
             "visible": true,
             "doubleSided": false,
@@ -1019,17 +1190,82 @@
           },
           "children": [
             {
-              "id": "36",
-              "name": "Calf-Right-Armor",
-              "position": {"x": 0, "y": 0, "z": 0},
+              "id": "38",
+              "name": "Calf-Right-Armor--C1",
+              "position": {"x": 5.5, "y": 0, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": -0.14838, "y": -1.14821, "z": -0.126},
+                "offset": {"x": 5.5, "y": 0, "z": 0},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
-                  "size": {"x": 11, "y": 24, "z": 10}
+                  "size": {"x": 0, "y": 24, "z": 10},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 120, "y": 184},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 110, "y": 184},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "39",
+              "name": "Calf-Right-Armor--C2",
+              "position": {"x": 5.5, "y": 0, "z": 0},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0, "z": 5},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 11, "y": 24, "z": 0},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 120, "y": 184},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 120, "y": 184},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "40",
+              "name": "Calf-Right-Armor--C3",
+              "position": {"x": 5.5, "y": 0, "z": 0},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0, "z": -5},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 11, "y": 24, "z": 0},
+                  "isStaticBox": true
                 },
                 "textureLayout": {
                   "back": {
@@ -1037,18 +1273,8 @@
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   },
-                  "right": {
-                    "offset": {"x": 110, "y": 184},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
                   "front": {
-                    "offset": {"x": 120, "y": 184},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "left": {
-                    "offset": {"x": 110, "y": 184},
+                    "offset": {"x": 99, "y": 184},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   }
@@ -1057,47 +1283,17 @@
                 "visible": true,
                 "doubleSided": false,
                 "shadingMode": "flat"
-              },
-              "children": [
-                {
-                  "id": "37",
-                  "name": "cube--C1",
-                  "position": {"x": 5.5, "y": -9.81915, "z": -8.22642},
-                  "orientation": {"x": -0.19459, "y": -0.63688, "z": 0.17065, "w": 0.72622},
-                  "shape": {
-                    "type": "quad",
-                    "offset": {"x": 18.75162, "y": 6.29601, "z": 0.42905},
-                    "stretch": {"x": 1, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 21, "y": 24},
-                      "normal": "+Z",
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "front": {
-                        "offset": {"x": 191, "y": 83},
-                        "mirror": {"x": false, "y": false},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                }
-              ]
+              }
             }
           ]
         }
       ]
     },
     {
-      "id": "38",
-      "name": "Leg-Left",
-      "position": {"x": 0, "y": 0, "z": 0},
-      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+      "id": "41",
+      "name": "Calf-Left",
+      "position": {"x": -9.18078, "y": 12.53417, "z": 10.40994},
+      "orientation": {"x": 0.30071, "y": 0, "z": 0, "w": 0.95372},
       "shape": {
         "type": "none",
         "offset": {"x": 0, "y": 0, "z": 0},
@@ -1113,18 +1309,30 @@
       },
       "children": [
         {
-          "id": "39",
-          "name": "Leg-Left-Container",
-          "position": {"x": 3.4602, "y": -12.12454, "z": 3.75841},
+          "id": "42",
+          "name": "Calf-Left-Armor",
+          "position": {"x": 0, "y": 1, "z": 0.25},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
-            "type": "none",
-            "offset": {"x": 0, "y": 0, "z": 0},
-            "stretch": {"x": 0, "y": 0, "z": 0},
+            "type": "box",
+            "offset": {"x": 5.5, "y": -0.60375, "z": -0.64267},
+            "stretch": {"x": 1, "y": 1, "z": 1},
             "settings": {
-              "isPiece": false
+              "isPiece": false,
+              "size": {"x": 0, "y": 24, "z": 10}
             },
-            "textureLayout": {},
+            "textureLayout": {
+              "right": {
+                "offset": {"x": 110, "y": 184},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              },
+              "left": {
+                "offset": {"x": 120, "y": 184},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              }
+            },
             "unwrapMode": "custom",
             "visible": true,
             "doubleSided": false,
@@ -1132,36 +1340,27 @@
           },
           "children": [
             {
-              "id": "40",
-              "name": "Leg-Left-Armor",
-              "position": {"x": 0, "y": 0, "z": 0},
+              "id": "43",
+              "name": "Calf-Left-Armor--C1",
+              "position": {"x": -5.5, "y": 0, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": -3.5, "y": 10.05438, "z": -4.88972},
+                "offset": {"x": -5.5, "y": 0, "z": 0},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
-                  "size": {"x": 13, "y": 29, "z": 11}
+                  "size": {"x": 0, "y": 24, "z": 10},
+                  "isStaticBox": true
                 },
                 "textureLayout": {
-                  "back": {
-                    "offset": {"x": 135, "y": 184},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
                   "right": {
-                    "offset": {"x": 158, "y": 184},
+                    "offset": {"x": 120, "y": 184},
                     "mirror": {"x": true, "y": false},
                     "angle": 0
                   },
-                  "front": {
-                    "offset": {"x": 155, "y": 184},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
                   "left": {
-                    "offset": {"x": 147, "y": 184},
+                    "offset": {"x": 110, "y": 184},
                     "mirror": {"x": false, "y": false},
                     "angle": 0
                   }
@@ -1170,112 +1369,31 @@
                 "visible": true,
                 "doubleSided": false,
                 "shadingMode": "flat"
-              },
-              "children": [
-                {
-                  "id": "41",
-                  "name": "cube--C1",
-                  "position": {"x": -7.5, "y": 0, "z": 0},
-                  "orientation": {"x": -0.65623, "y": 0.17524, "z": -0.71615, "w": 0.16058},
-                  "shape": {
-                    "type": "quad",
-                    "offset": {"x": 10.012, "y": 0.4912, "z": 0.74472},
-                    "stretch": {"x": 1, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 15, "y": 10},
-                      "normal": "+Z",
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "front": {
-                        "offset": {"x": 191, "y": 82},
-                        "mirror": {"x": false, "y": true},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "42",
-      "name": "Leg-Right",
-      "position": {"x": 0, "y": 0, "z": 0},
-      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-      "shape": {
-        "type": "none",
-        "offset": {"x": 0, "y": 0, "z": 0},
-        "stretch": {"x": 0, "y": 0, "z": 0},
-        "settings": {
-          "isPiece": true
-        },
-        "textureLayout": {},
-        "unwrapMode": "custom",
-        "visible": true,
-        "doubleSided": false,
-        "shadingMode": "flat"
-      },
-      "children": [
-        {
-          "id": "43",
-          "name": "Leg-Right-Container",
-          "position": {"x": 0, "y": 0, "z": 0},
-          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-          "shape": {
-            "type": "none",
-            "offset": {"x": 0, "y": 0, "z": 0},
-            "stretch": {"x": 0, "y": 0, "z": 0},
-            "settings": {
-              "isPiece": false
+              }
             },
-            "textureLayout": {},
-            "unwrapMode": "custom",
-            "visible": true,
-            "doubleSided": false,
-            "shadingMode": "flat"
-          },
-          "children": [
             {
               "id": "44",
-              "name": "Leg-Right-Armor",
-              "position": {"x": 0, "y": 0, "z": 0},
+              "name": "Calf-Left-Armor--C2",
+              "position": {"x": -5.5, "y": 0, "z": 0},
               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
               "shape": {
                 "type": "box",
-                "offset": {"x": 0.0398, "y": -2.07016, "z": -1.13131},
+                "offset": {"x": 0, "y": 0, "z": 5},
                 "stretch": {"x": 1, "y": 1, "z": 1},
                 "settings": {
                   "isPiece": false,
-                  "size": {"x": 13, "y": 29, "z": 11}
+                  "size": {"x": 11, "y": 24, "z": 0},
+                  "isStaticBox": true
                 },
                 "textureLayout": {
                   "back": {
-                    "offset": {"x": 148, "y": 184},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  },
-                  "right": {
-                    "offset": {"x": 158, "y": 184},
+                    "offset": {"x": 131, "y": 184},
                     "mirror": {"x": true, "y": false},
                     "angle": 0
                   },
                   "front": {
-                    "offset": {"x": 168, "y": 184},
+                    "offset": {"x": 131, "y": 184},
                     "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  },
-                  "left": {
-                    "offset": {"x": 147, "y": 184},
-                    "mirror": {"x": false, "y": false},
                     "angle": 0
                   }
                 },
@@ -1283,37 +1401,39 @@
                 "visible": true,
                 "doubleSided": false,
                 "shadingMode": "flat"
-              },
-              "children": [
-                {
-                  "id": "45",
-                  "name": "cube--C1",
-                  "position": {"x": 7.5, "y": 0, "z": 0},
-                  "orientation": {"x": -0.65623, "y": -0.17524, "z": 0.71615, "w": 0.16058},
-                  "shape": {
-                    "type": "quad",
-                    "offset": {"x": -10.012, "y": 0.4912, "z": 0.74472},
-                    "stretch": {"x": 1, "y": 1, "z": 1},
-                    "settings": {
-                      "isPiece": false,
-                      "size": {"x": 15, "y": 10},
-                      "normal": "+Z",
-                      "isStaticBox": true
-                    },
-                    "textureLayout": {
-                      "front": {
-                        "offset": {"x": 206, "y": 82},
-                        "mirror": {"x": true, "y": true},
-                        "angle": 0
-                      }
-                    },
-                    "unwrapMode": "custom",
-                    "visible": true,
-                    "doubleSided": true,
-                    "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "45",
+              "name": "Calf-Left-Armor--C3",
+              "position": {"x": -5.5, "y": 0, "z": 0},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0, "z": -5},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 11, "y": 24, "z": 0},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 110, "y": 184},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 110, "y": 184},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
                   }
-                }
-              ]
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
             }
           ]
         }
@@ -1322,7 +1442,7 @@
     {
       "id": "46",
       "name": "Jaw",
-      "position": {"x": 0, "y": 0, "z": 0},
+      "position": {"x": 0, "y": 94.62686, "z": -49.02018},
       "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
       "shape": {
         "type": "none",
@@ -1341,15 +1461,15 @@
         {
           "id": "47",
           "name": "Jaw-Armor",
-          "position": {"x": -0.04884, "y": -1.25, "z": 0},
+          "position": {"x": -0.04884, "y": -3.11436, "z": -1.38982},
           "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
             "type": "box",
-            "offset": {"x": 0, "y": 0, "z": 0.5},
+            "offset": {"x": 0, "y": 1.86436, "z": 2.43018},
             "stretch": {"x": 1, "y": 1, "z": 1},
             "settings": {
               "isPiece": false,
-              "size": {"x": 19, "y": 6, "z": 19}
+              "size": {"x": 19, "y": 6, "z": 20}
             },
             "textureLayout": {
               "back": {
@@ -1363,78 +1483,91 @@
                 "angle": 0
               },
               "left": {
-                "offset": {"x": 37, "y": 66},
+                "offset": {"x": 36, "y": 66},
                 "mirror": {"x": false, "y": false},
                 "angle": 0
               },
               "bottom": {
-                "offset": {"x": 54, "y": 85},
+                "offset": {"x": 74, "y": 85},
+                "mirror": {"x": false, "y": true},
+                "angle": 270
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          }
+        }
+      ]
+    },
+    {
+      "id": "48",
+      "name": "Leg-Right",
+      "position": {"x": 9.18078, "y": 32.04628, "z": -3.64048},
+      "orientation": {"x": -0.32144, "y": 0, "z": 0, "w": 0.94693},
+      "shape": {
+        "type": "none",
+        "offset": {"x": 0, "y": 0, "z": 0},
+        "stretch": {"x": 0, "y": 0, "z": 0},
+        "settings": {
+          "isPiece": true
+        },
+        "textureLayout": {},
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": false,
+        "shadingMode": "flat"
+      },
+      "children": [
+        {
+          "id": "49",
+          "name": "Leg-Right-Armor",
+          "position": {"x": 0, "y": 0, "z": 11.75},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": -0.4602, "y": -8.07016, "z": -0.63131},
+            "stretch": {"x": 1, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 12, "y": 29, "z": 12}
+            },
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 147, "y": 184},
                 "mirror": {"x": true, "y": false},
-                "angle": 180
+                "angle": 0
+              },
+              "right": {
+                "offset": {"x": 159, "y": 184},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "front": {
+                "offset": {"x": 171, "y": 184},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "left": {
+                "offset": {"x": 147, "y": 184},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
               }
             },
             "unwrapMode": "custom",
             "visible": true,
             "doubleSided": false,
             "shadingMode": "flat"
-          },
-          "children": [
-            {
-              "id": "48",
-              "name": "Jaw--C1",
-              "position": {"x": 0, "y": -2.5, "z": -4.5},
-              "orientation": {"x": -0.46175, "y": 0, "z": 0, "w": 0.88701},
-              "shape": {
-                "type": "box",
-                "offset": {"x": 0, "y": 0, "z": -1.5},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 1, "y": 4, "z": 5},
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "back": {
-                    "offset": {"x": 28, "y": 68},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  },
-                  "right": {
-                    "offset": {"x": 41, "y": 68},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "left": {
-                    "offset": {"x": 45, "y": 68},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "top": {
-                    "offset": {"x": 59, "y": 72},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "bottom": {
-                    "offset": {"x": 63, "y": 79},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 180
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": false,
-                "shadingMode": "flat"
-              }
-            }
-          ]
+          }
         }
       ]
     },
     {
-      "id": "49",
-      "name": "Wing-Left",
-      "position": {"x": 0, "y": 0, "z": 0},
-      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+      "id": "50",
+      "name": "Leg-Left",
+      "position": {"x": -9.18078, "y": 32.04628, "z": -3.64048},
+      "orientation": {"x": -0.32144, "y": 0, "z": 0, "w": 0.94693},
       "shape": {
         "type": "none",
         "offset": {"x": 0, "y": 0, "z": 0},
@@ -1450,231 +1583,49 @@
       },
       "children": [
         {
-          "id": "50",
-          "name": "Wing-Left-Armor",
-          "position": {"x": 38.40897, "y": 15.34658, "z": -18.0609},
-          "orientation": {"x": -0.29358, "y": 0.03758, "z": -0.21315, "w": 0.93111},
+          "id": "51",
+          "name": "Leg-Left-Armor",
+          "position": {"x": 0, "y": 0, "z": 11.75},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
           "shape": {
-            "type": "none",
-            "offset": {"x": 0, "y": 0, "z": 0},
-            "stretch": {"x": 0, "y": 0, "z": 0},
+            "type": "box",
+            "offset": {"x": 0.4602, "y": -8.07016, "z": -0.63131},
+            "stretch": {"x": 1, "y": 1, "z": 1},
             "settings": {
-              "isPiece": false
+              "isPiece": false,
+              "size": {"x": 12, "y": 29, "z": 12}
             },
-            "textureLayout": {},
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 135, "y": 184},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              },
+              "right": {
+                "offset": {"x": 159, "y": 184},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "front": {
+                "offset": {"x": 159, "y": 184},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              },
+              "left": {
+                "offset": {"x": 147, "y": 184},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              }
+            },
             "unwrapMode": "custom",
             "visible": true,
             "doubleSided": false,
             "shadingMode": "flat"
-          },
-          "children": [
-            {
-              "id": "51",
-              "name": "cube--C1",
-              "position": {"x": 4.12895, "y": -0.59936, "z": 0},
-              "orientation": {"x": 0.58794, "y": -0.39285, "z": -0.39285, "w": 0.58794},
-              "shape": {
-                "type": "quad",
-                "offset": {"x": 0, "y": 0, "z": 0.05},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 16, "y": 28},
-                  "normal": "+Z",
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "front": {
-                    "offset": {"x": 164, "y": 105},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            },
-            {
-              "id": "52",
-              "name": "cube--C2",
-              "position": {"x": -4.12105, "y": 0.65064, "z": 0},
-              "orientation": {"x": 0.64086, "y": 0.29884, "z": 0.29884, "w": 0.64086},
-              "shape": {
-                "type": "quad",
-                "offset": {"x": 0, "y": 0, "z": 0.05},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 16, "y": 28},
-                  "normal": "+Z",
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "front": {
-                    "offset": {"x": 180, "y": 105},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "53",
-      "name": "Wing-Right",
-      "position": {"x": 0, "y": 0, "z": 0},
-      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
-      "shape": {
-        "type": "none",
-        "offset": {"x": 0, "y": 0, "z": 0},
-        "stretch": {"x": 0, "y": 0, "z": 0},
-        "settings": {
-          "isPiece": true
-        },
-        "textureLayout": {},
-        "unwrapMode": "custom",
-        "visible": true,
-        "doubleSided": false,
-        "shadingMode": "flat"
-      },
-      "children": [
-        {
-          "id": "54",
-          "name": "Wing-Right-Armor",
-          "position": {"x": -38.40331, "y": 15.35708, "z": -18.06461},
-          "orientation": {"x": -0.29358, "y": -0.03758, "z": 0.21315, "w": 0.93111},
-          "shape": {
-            "type": "none",
-            "offset": {"x": 0, "y": 0, "z": 0},
-            "stretch": {"x": 0, "y": 0, "z": 0},
-            "settings": {
-              "isPiece": false
-            },
-            "textureLayout": {},
-            "unwrapMode": "custom",
-            "visible": true,
-            "doubleSided": false,
-            "shadingMode": "flat"
-          },
-          "children": [
-            {
-              "id": "55",
-              "name": "cube--C1",
-              "position": {"x": -4.13852, "y": -0.6074, "z": 0},
-              "orientation": {"x": 0.58794, "y": 0.39285, "z": 0.39285, "w": 0.58794},
-              "shape": {
-                "type": "box",
-                "offset": {"x": 0, "y": 0, "z": 0.05},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 16, "y": 28, "z": 0},
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "back": {
-                    "offset": {"x": 164, "y": 105},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "right": {
-                    "offset": {"x": 0, "y": 0},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "front": {
-                    "offset": {"x": 180, "y": 105},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  },
-                  "left": {
-                    "offset": {"x": 0, "y": 0},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "top": {
-                    "offset": {"x": 16, "y": 0},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  },
-                  "bottom": {
-                    "offset": {"x": 16, "y": 0},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            },
-            {
-              "id": "56",
-              "name": "cube--C2",
-              "position": {"x": 4.11148, "y": 0.6426, "z": 0},
-              "orientation": {"x": 0.64086, "y": -0.29884, "z": -0.29884, "w": 0.64086},
-              "shape": {
-                "type": "box",
-                "offset": {"x": 0, "y": 0, "z": 0.025},
-                "stretch": {"x": 1, "y": 1, "z": 1},
-                "settings": {
-                  "isPiece": false,
-                  "size": {"x": 16, "y": 28, "z": 0},
-                  "isStaticBox": true
-                },
-                "textureLayout": {
-                  "back": {
-                    "offset": {"x": 180, "y": 105},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  },
-                  "right": {
-                    "offset": {"x": 0, "y": 0},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "front": {
-                    "offset": {"x": 164, "y": 105},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "left": {
-                    "offset": {"x": 0, "y": 0},
-                    "mirror": {"x": false, "y": false},
-                    "angle": 0
-                  },
-                  "top": {
-                    "offset": {"x": 16, "y": 0},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  },
-                  "bottom": {
-                    "offset": {"x": 16, "y": 0},
-                    "mirror": {"x": true, "y": false},
-                    "angle": 0
-                  }
-                },
-                "unwrapMode": "custom",
-                "visible": true,
-                "doubleSided": true,
-                "shadingMode": "flat"
-              }
-            }
-          ]
+          }
         }
       ]
     }
   ],
-  "format": "character",
+  "format": "prop",
   "lod": "auto"
 }

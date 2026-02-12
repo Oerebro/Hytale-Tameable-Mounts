@@ -5,7 +5,7 @@
     "Description": "item.Barding.Dragoon.description"
   },
   "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.png",
-  "Model": "NPC/Livestock/Chocobo/Models/Attachments/Dragoon_Barding.blockymodel",
+  "Model": "Items/Bardings/Dragoon_Barding_Item.blockymodel",
   "Icon": "Icons/Items/Bardings/Dragoon.png",
   "Quality": "Common",
   "DropOnDeath": true

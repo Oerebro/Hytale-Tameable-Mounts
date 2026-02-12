@@ -6,6 +6,10 @@
         "Value": "Deer_Stag",
         "Description": "The NPC's model."
       },
+      "TameSFX": {
+        "Value": "Empty",
+        "Description": "The sound this NPC makes when fed a taming item."
+      },
       "WanderRadius": {
         "Value": 7,
         "Description": "The wander radius of the NPC."
@@ -2601,7 +2605,8 @@
               ]
             },
             "Actions": [
-              { "Type": "Tame" }
+              { "Type": "Tame" },
+              { "Type": "PlaySound","SoundEventId": { "Compute": "TameSFX" } }
             ]
           },
           {
@@ -2626,7 +2631,8 @@
               ]
             },
             "Actions": [
-              { "Type": "TameGuaranteed" }
+              { "Type": "TameGuaranteed" },
+              { "Type": "PlaySound","SoundEventId": { "Compute": "TameSFX" } }
             ]
           }
         ]

@@ -14,7 +14,7 @@
       "Definitions": {
         "Stage1": {
           "Opacity": "Semitransparent",
-          "CustomModel": "Resources/Ingredients/Golden_Gysahl_01.blockymodel",
+          "CustomModel": "Resources/Ingredients/Gysahl_01.blockymodel",
           "CustomModelTexture": [
             {
               "Texture": "Resources/Ingredients/Golden_Gysahl.png",
@@ -35,7 +35,7 @@
         "Stage2": {
           "Material": "Solid",
           "Opacity": "Semitransparent",
-          "CustomModel": "Resources/Ingredients/Golden_Gysahl_02.blockymodel",
+          "CustomModel": "Resources/Ingredients/Gysahl_02.blockymodel",
           "CustomModelTexture": [
             {
               "Texture": "Resources/Ingredients/Golden_Gysahl.png",
@@ -54,7 +54,7 @@
           "ParticleColor": "#8bc752"
         },
         "StageFinal": {
-          "CustomModel": "Resources/Ingredients/Golden_Gysahl_03.blockymodel",
+          "CustomModel": "Resources/Ingredients/Gysahl_03.blockymodel",
           "CustomModelTexture": [
             {
               "Texture": "Resources/Ingredients/Golden_Gysahl.png",
