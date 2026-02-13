@@ -158,8 +158,9 @@ public class MountInitSystem extends TickingSystem<EntityStore> {
         //setRandomColor(ref,store);
         decideColor(ref,store);
 
-        //set attachment to default when spawning
-        setModelAttachment(ref,"Barding","Default",store);
+        //set attachment to empty when spawning
+        setModelAttachment(ref,"Barding","Empty",store);
+        setModelAttachment(ref,"Saddle","Empty",store);
 
     }
 

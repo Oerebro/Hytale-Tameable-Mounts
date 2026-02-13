@@ -58,7 +58,7 @@ public class ActionEquipBarding extends ActionBase {
 
         //return the old barding unless it was default or doesnt exist (null)
         //get a new stack for the old barding
-        if(oldBarding == null || oldBarding.equals("Default")){
+        if(oldBarding == null || oldBarding.equals("Empty")){
             System.out.println("This shouldn't happen: "+oldBarding);
             ChocoboPlugin.getHytaleLogger().atWarning().log("Tried to give a null or default barding!");
             return true;

@@ -379,6 +379,10 @@
   },
   "RandomAttachmentSets": {
     "Barding": {
+      "Empty": {
+        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Empty.blockymodel",
+        "Texture": "NPC/Livestock/Chocobo/Models/Chocobo_Grey.png"
+      },
       "Default": {
         "Model": "NPC/Livestock/Chocobo/Models/Attachments/Bardings/Default.blockymodel",
         "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Bardings/Common_Barding.png"
@@ -393,8 +397,8 @@
       }
     },
     "Saddle": {
-      "Default": {
-        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Bardings/Empty.blockymodel",
+      "Empty": {
+        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Empty.blockymodel",
         "Texture": "NPC/Livestock/Chocobo/Models/Chocobo_Grey.png"
       }
     },
