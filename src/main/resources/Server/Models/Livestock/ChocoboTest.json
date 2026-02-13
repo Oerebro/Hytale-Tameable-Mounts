@@ -380,8 +380,8 @@
   "RandomAttachmentSets": {
     "Barding": {
       "Common": {
-        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Bardings/Whitemage_Barding.blockymodel",
-        "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Bardings/Whitemage_Barding.png"
+        "Model": "NPC/Livestock/Chocobo/Models/Attachments/Bardings/Dragoon_Barding.blockymodel",
+        "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Bardings/Dragoon_Barding.png"
       }
     }
   }

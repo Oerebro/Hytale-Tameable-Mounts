@@ -8,6 +8,7 @@ import org.gradle.internal.os.OperatingSystem
 tasks.processResources {
     exclude '**/*.bat'
     exclude '**/*.ps1'
+    exclude '**/*.bbmodel'
     exclude '**/Backup/**'
 }
 

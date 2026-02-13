@@ -15,6 +15,9 @@ itemName.Golden_Gysahl_Seeds_Eternal = Golden Gysahl Seeds (Eternal)
 blockName.Gysahl.final = Gysahl Green
 blockName.Golden_Gysahl.final = Golden Gysahl
 
+item.Barding.Default.name = [WIP] Leather Chocobo Saddle
+item.Barding.Default.description = [WIP] Just a chocobo saddle
+
 item.Barding.Common.name = [WIP] Leather Barding
 item.Barding.Common.description = [WIP] A common barding for racing Chocobos
 

@@ -23,7 +23,7 @@
       -13.2
     ]
   },
-  "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.png",
+  "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Bardings/Common_Barding.png",
   "Model": "Items/Bardings/Common_Barding_Item.blockymodel",
   "Armor": {
     "ArmorSlot": "Chest",

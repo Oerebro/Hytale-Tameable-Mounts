@@ -1,11 +1,11 @@
 {
   "TranslationProperties": {
-    "Name": "chocobo.item.Barding.Common.name",
-    "Description": "item.Barding.Common.description"
+    "Name": "chocobo.item.Barding.Default.name",
+    "Description": "item.Barding.Default.description"
   },
-  "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.png",
-  "Model": "NPC/Livestock/Chocobo/Models/Attachments/Common_Barding.blockymodel",
-  "Icon": "Icons/Items/Bardings/Common.png",
+  "Texture": "NPC/Livestock/Chocobo/Models/Attachments/Bardings/Common_Barding.png",
+  "Model": "Items/Bardings/Common_Barding_Item.blockymodel",
+  "Icon": "Icons/Items/Bardings/Default.png",
   "IconProperties": {
     "Scale": 0.7,
     "Translation": [
