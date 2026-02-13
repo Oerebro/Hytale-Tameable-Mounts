@@ -1,0 +1,2106 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Neck-Upper",
+      "position": {"x": 0, "y": 76.02294, "z": -29.35004},
+      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+      "shape": {
+        "type": "none",
+        "offset": {"x": 0, "y": 0, "z": 0},
+        "stretch": {"x": 0, "y": 0, "z": 0},
+        "settings": {
+          "isPiece": true
+        },
+        "textureLayout": {},
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": false,
+        "shadingMode": "flat"
+      },
+      "children": [
+        {
+          "id": "2",
+          "name": "Neck-Upper-Armor",
+          "position": {"x": -18.13361, "y": 14.53611, "z": -2.56945},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": 26.63361, "y": -14, "z": 2},
+            "stretch": {"x": 0.95625, "y": 1, "z": 0.96875},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 0, "y": 33, "z": 16}
+            },
+            "textureLayout": {
+              "right": {
+                "offset": {"x": 113, "y": 16},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "left": {
+                "offset": {"x": 97, "y": 16},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "3",
+              "name": "Neck-Upper-Armor--C1",
+              "position": {"x": -8.5, "y": -1, "z": -1},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -8.5, "y": 1, "z": 1},
+                "stretch": {"x": 0.95625, "y": 1, "z": 0.96875},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 33, "z": 16},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 113, "y": 16},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 97, "y": 16},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "4",
+              "name": "Neck-Upper-Armor--C2",
+              "position": {"x": -8.5, "y": -4, "z": -1},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 1, "z": 8.75},
+                "stretch": {"x": 0.95625, "y": 1, "z": 0.96875},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 18, "y": 33, "z": 0},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 112, "y": 16},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 130, "y": 16},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "5",
+              "name": "Neck-Upper-Armor--C3",
+              "position": {"x": -8.5, "y": -0.5, "z": -1},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 2.5, "z": -6.75},
+                "stretch": {"x": 0.95625, "y": 1, "z": 0.96875},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 18, "y": 36, "z": 0},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 98, "y": 13},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 80, "y": 13},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "name": "Reigns-Lower",
+          "position": {"x": 0, "y": 1.45825, "z": -2.47934},
+          "orientation": {"x": 0.17365, "y": 0, "z": 0, "w": 0.98481},
+          "shape": {
+            "type": "none",
+            "offset": {"x": 0, "y": 0, "z": 0},
+            "stretch": {"x": 0, "y": 0, "z": 0},
+            "settings": {
+              "isPiece": false
+            },
+            "textureLayout": {},
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "7",
+              "name": "reigns_lower--C1",
+              "position": {"x": -21.02165, "y": 12.5188, "z": 18.97383},
+              "orientation": {"x": 0.13795, "y": 0.69352, "z": 0.13795, "w": 0.69352},
+              "shape": {
+                "type": "quad",
+                "offset": {"x": 3.5, "y": -15, "z": 9.75},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 21, "y": 13},
+                  "normal": "+Z",
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "front": {
+                    "offset": {"x": 16, "y": 66},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 90
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": true,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "8",
+              "name": "reigns_lower--C2",
+              "position": {"x": 21.02165, "y": 12.5188, "z": 18.97383},
+              "orientation": {"x": 0.13795, "y": -0.69352, "z": -0.13795, "w": 0.69352},
+              "shape": {
+                "type": "quad",
+                "offset": {"x": -3.5, "y": -15, "z": 9.75},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 21, "y": 13},
+                  "normal": "+Z",
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "front": {
+                    "offset": {"x": 16, "y": 45},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": true,
+                "shadingMode": "flat"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Head",
+      "position": {"x": 0, "y": 99.5, "z": -42.05204},
+      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+      "shape": {
+        "type": "none",
+        "offset": {"x": 0, "y": 0, "z": 0},
+        "stretch": {"x": 0, "y": 0, "z": 0},
+        "settings": {
+          "isPiece": true
+        },
+        "textureLayout": {},
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": false,
+        "shadingMode": "flat"
+      },
+      "children": [
+        {
+          "id": "10",
+          "name": "Head-Armor",
+          "position": {"x": 0, "y": -0.92312, "z": 0.46999},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": 0, "y": 0, "z": -19.41795},
+            "stretch": {"x": 1, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 21, "y": 19, "z": 0}
+            },
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 19, "y": 21},
+                "mirror": {"x": false, "y": true},
+                "angle": 270
+              },
+              "front": {
+                "offset": {"x": 19, "y": 21},
+                "mirror": {"x": false, "y": true},
+                "angle": 270
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "11",
+              "name": "Head-Armor--C1",
+              "position": {"x": 0, "y": 1, "z": 20.91795},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -10.5, "y": -1, "z": -1},
+                "stretch": {"x": 1, "y": 1, "z": 1.025},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 19, "z": 39},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 58, "y": 21},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 19, "y": 21},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "12",
+              "name": "Head-Armor--C2",
+              "position": {"x": 0, "y": 1, "z": 20.91795},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 10.5, "y": -1, "z": -1},
+                "stretch": {"x": 1, "y": 1, "z": 1.025},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 19, "z": 39},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 58, "y": 21},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 19, "y": 21},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "13",
+              "name": "Head-Armor--C3",
+              "position": {"x": 0, "y": 1, "z": 21.29295},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": -1, "z": 18.58205},
+                "stretch": {"x": 1, "y": 1, "z": 1.06},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 21, "y": 19, "z": 0},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 58, "y": 0},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 270
+                  },
+                  "front": {
+                    "offset": {"x": 58, "y": 21},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 90
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "14",
+              "name": "Head-Armor--C4",
+              "position": {"x": 0, "y": -7.20136, "z": 13.56017},
+              "orientation": {"x": 0.10887, "y": 0, "z": 0, "w": 0.99406},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0, "z": 0},
+                "stretch": {"x": 1, "y": 1, "z": 1.06},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 17, "y": 0, "z": 27},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "top": {
+                    "offset": {"x": 27, "y": 59},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 270
+                  },
+                  "bottom": {
+                    "offset": {"x": 54, "y": 59},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 90
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "15",
+              "name": "Head-Armor--C5",
+              "position": {"x": 0, "y": 1, "z": 20.91795},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 8.5, "z": -1},
+                "stretch": {"x": 1, "y": 1, "z": 1.025},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 21, "y": 0, "z": 39},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "top": {
+                    "offset": {"x": 19, "y": 0},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "bottom": {
+                    "offset": {"x": 58, "y": 0},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            }
+          ]
+        },
+        {
+          "id": "16",
+          "name": "Reigns-Upper",
+          "position": {"x": 0, "y": -4.09455, "z": 8.84084},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "none",
+            "offset": {"x": 0, "y": 0, "z": 0},
+            "stretch": {"x": 0, "y": 0, "z": 0},
+            "settings": {
+              "isPiece": false
+            },
+            "textureLayout": {},
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "17",
+              "name": "reigns_upper--C1",
+              "position": {"x": -1.88803, "y": 40.73423, "z": 2.05654},
+              "orientation": {"x": 0.37993, "y": 0.59637, "z": 0.37993, "w": 0.59637},
+              "shape": {
+                "type": "quad",
+                "offset": {"x": -43.7217, "y": -21.55353, "z": -9.75},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 21, "y": 13},
+                  "normal": "+Z",
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "front": {
+                    "offset": {"x": 16, "y": 45},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 90
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": true,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "18",
+              "name": "reigns_upper--C2",
+              "position": {"x": 1.88803, "y": 40.73423, "z": 2.05654},
+              "orientation": {"x": 0.37993, "y": -0.59637, "z": -0.37993, "w": 0.59637},
+              "shape": {
+                "type": "quad",
+                "offset": {"x": 43.7217, "y": -21.55353, "z": -9.75},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 21, "y": 13},
+                  "normal": "+Z",
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "front": {
+                    "offset": {"x": 16, "y": 24},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": true,
+                "shadingMode": "flat"
+              }
+            }
+          ]
+        },
+        {
+          "id": "19",
+          "name": "Blackmage-Hat",
+          "position": {"x": 0.03242, "y": 12.45256, "z": 20.97482},
+          "orientation": {"x": 0.27983, "y": 0, "z": 0, "w": 0.96005},
+          "shape": {
+            "type": "none",
+            "offset": {"x": 0, "y": 0, "z": 0},
+            "stretch": {"x": 0, "y": 0, "z": 0},
+            "settings": {
+              "isPiece": false
+            },
+            "textureLayout": {},
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "20",
+              "name": "hat--C1",
+              "position": {"x": -1.32119, "y": -11.10119, "z": -1.13242},
+              "orientation": {"x": 0, "y": 0, "z": -0.02181, "w": 0.99976},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 1.2, "y": 0.1625, "z": -0.3},
+                "stretch": {"x": 1.025, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 32, "y": 4, "z": 33},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 222, "y": 35},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 270
+                  },
+                  "right": {
+                    "offset": {"x": 222, "y": 3},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 251, "y": 35},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 270
+                  },
+                  "left": {
+                    "offset": {"x": 222, "y": 31},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 189, "y": 35},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 90
+                  },
+                  "bottom": {
+                    "offset": {"x": 222, "y": 3},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "21",
+              "name": "cube--C2",
+              "position": {"x": -0.32119, "y": -5.33869, "z": -1.13242},
+              "orientation": {"x": 0.04358, "y": 0.0019, "z": 0.04358, "w": 0.9981},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0.14943, "y": -0.01302, "z": 0.00114},
+                "stretch": {"x": 1.025, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 21, "y": 11, "z": 21},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 159, "y": 40},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "right": {
+                    "offset": {"x": 201, "y": 40},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 180, "y": 40},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 201, "y": 40},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 180
+                  },
+                  "top": {
+                    "offset": {"x": 197, "y": 30},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 90
+                  },
+                  "bottom": {
+                    "offset": {"x": 6, "y": 34},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "22",
+              "name": "cube--C3",
+              "position": {"x": 0.00246, "y": -7.3235, "z": -1.30673},
+              "orientation": {"x": 0.04345, "y": 0.0038, "z": 0, "w": 0.99905},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0, "z": 0},
+                "stretch": {"x": 1.15, "y": 0.75, "z": 1.125},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 21, "y": 11, "z": 21},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 159, "y": 79},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "right": {
+                    "offset": {"x": 201, "y": 79},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 180, "y": 79},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 201, "y": 79},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 180
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "23",
+              "name": "cube--C4",
+              "position": {"x": 0.37881, "y": 1.66131, "z": -0.43242},
+              "orientation": {"x": 0.17348, "y": 0.0038, "z": 0.04345, "w": 0.98387},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0, "z": 0},
+                "stretch": {"x": 1.025, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 16, "y": 8, "z": 16},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 225, "y": 18},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "right": {
+                    "offset": {"x": 225, "y": 4},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 225, "y": 12},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 225, "y": 26},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 175, "y": 51},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 90
+                  },
+                  "bottom": {
+                    "offset": {"x": 17, "y": 39},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "24",
+              "name": "cube--C5",
+              "position": {"x": 0.02881, "y": 8.26853, "z": 1.43598},
+              "orientation": {"x": 0.25882, "y": 0, "z": 0, "w": 0.96593},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": -4, "z": 0},
+                "stretch": {"x": 1.025, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 7, "y": 9, "z": 7},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 191, "y": 63},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "right": {
+                    "offset": {"x": 191, "y": 63},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 191, "y": 63},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 191, "y": 63},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 208, "y": 55},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 90
+                  },
+                  "bottom": {
+                    "offset": {"x": 26, "y": 21},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "25",
+              "name": "cube--C6",
+              "position": {"x": 0.02881, "y": 12.16564, "z": 3.68598},
+              "orientation": {"x": 0.44229, "y": 0, "z": 0, "w": 0.89687},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": -1.5, "z": 1.75},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 7, "y": 7, "z": 7},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 191, "y": 56},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "right": {
+                    "offset": {"x": 191, "y": 56},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 191, "y": 56},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 191, "y": 56},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 208, "y": 55},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 90
+                  },
+                  "bottom": {
+                    "offset": {"x": 26, "y": 21},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "name": "Neck",
+      "position": {"x": 39.01666, "y": 38.24384, "z": -20.13326},
+      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+      "shape": {
+        "type": "none",
+        "offset": {"x": 0, "y": 0, "z": 0},
+        "stretch": {"x": 0, "y": 0, "z": 0},
+        "settings": {
+          "isPiece": true
+        },
+        "textureLayout": {},
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": false,
+        "shadingMode": "flat"
+      },
+      "children": [
+        {
+          "id": "27",
+          "name": "Neck-Armor",
+          "position": {"x": -9.24195, "y": -1.38117, "z": -6.87024},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "none",
+            "offset": {"x": 0, "y": 0, "z": 0},
+            "stretch": {"x": 0, "y": 0, "z": 0},
+            "settings": {
+              "isPiece": false
+            },
+            "textureLayout": {},
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "28",
+              "name": "armor_layer--C1",
+              "position": {"x": 20.88305, "y": 3, "z": 0},
+              "orientation": {"x": -0.19509, "y": 0, "z": 0, "w": 0.98079},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -50.65776, "y": 12.28885, "z": 5.91246},
+                "stretch": {"x": 1.0125, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 17, "y": 22, "z": 16},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 80, "y": 65},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "right": {
+                    "offset": {"x": 97, "y": 65},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 113, "y": 65},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 97, "y": 65},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 60, "y": 19},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 270
+                  },
+                  "bottom": {
+                    "offset": {"x": 60, "y": 19},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "name": "Torso",
+      "position": {"x": 0, "y": 54.38404, "z": -0.49448},
+      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+      "shape": {
+        "type": "none",
+        "offset": {"x": 0, "y": 0, "z": 0},
+        "stretch": {"x": 0, "y": 0, "z": 0},
+        "settings": {
+          "isPiece": true
+        },
+        "textureLayout": {},
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": false,
+        "shadingMode": "flat"
+      },
+      "children": [
+        {
+          "id": "30",
+          "name": "Torso-Armor",
+          "position": {"x": -1.04583, "y": -1.14477, "z": 3.45473},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": 1.41222, "y": 1.64346, "z": -33.05392},
+            "stretch": {"x": 0.9625, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 38, "y": 32, "z": 0}
+            },
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 33, "y": 164},
+                "mirror": {"x": true, "y": false},
+                "angle": 90
+              },
+              "front": {
+                "offset": {"x": 33, "y": 126},
+                "mirror": {"x": false, "y": false},
+                "angle": 90
+              },
+              "bottom": {
+                "offset": {"x": 33, "y": 196},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "31",
+              "name": "Torso-Armor--C1",
+              "position": {"x": 0, "y": 1, "z": 29},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": -17, "z": 0},
+                "stretch": {"x": 0.9625, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 38, "y": 0, "z": 58},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "top": {
+                    "offset": {"x": 33, "y": 196},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "bottom": {
+                    "offset": {"x": 91, "y": 196},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "32",
+              "name": "Torso-Armor--C2",
+              "position": {"x": 0, "y": 1, "z": 29},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 18.25, "y": -1, "z": 0},
+                "stretch": {"x": 0.9625, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 32, "z": 58},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 91, "y": 164},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 33, "y": 164},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "33",
+              "name": "Torso-Armor--C3",
+              "position": {"x": 0, "y": 1, "z": 29},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -18.25, "y": -1, "z": 0},
+                "stretch": {"x": 0.9625, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 32, "z": 58},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 91, "y": 164},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 33, "y": 164},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "34",
+              "name": "Torso-Armor--C4",
+              "position": {"x": 0, "y": 1, "z": 29},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 15, "z": 0},
+                "stretch": {"x": 0.9625, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 38, "y": 0, "z": 58},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "top": {
+                    "offset": {"x": 33, "y": 126},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "bottom": {
+                    "offset": {"x": 91, "y": 126},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            }
+          ]
+        },
+        {
+          "id": "35",
+          "name": "Saddle",
+          "position": {"x": -0.63361, "y": 18.3596, "z": 4.48564},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": 0, "y": -0.36091, "z": -0.08483},
+            "stretch": {"x": 0.9625, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 20, "y": 3, "z": 24}
+            },
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 53, "y": 134},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              },
+              "right": {
+                "offset": {"x": 77, "y": 134},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "front": {
+                "offset": {"x": 75, "y": 134},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              },
+              "left": {
+                "offset": {"x": 53, "y": 151},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              },
+              "top": {
+                "offset": {"x": 77, "y": 134},
+                "mirror": {"x": true, "y": true},
+                "angle": 270
+              },
+              "bottom": {
+                "offset": {"x": 53, "y": 134},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "36",
+              "name": "Torso-Armor--C1",
+              "position": {"x": 1, "y": -13.5, "z": -7},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -1, "y": 14, "z": -6},
+                "stretch": {"x": 0.9625, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 16, "y": 2, "z": 2},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 53, "y": 137},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "right": {
+                    "offset": {"x": 55, "y": 137},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 53, "y": 137},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "left": {
+                    "offset": {"x": 55, "y": 151},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 55, "y": 137},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "37",
+              "name": "Torso-Armor--C2",
+              "position": {"x": 0, "y": 1.5, "z": 13},
+              "orientation": {"x": -0.32144, "y": 0, "z": 0, "w": 0.94693},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": -2, "z": -1},
+                "stretch": {"x": 0.9625, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 16, "y": 8, "z": 8},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 77, "y": 137},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "right": {
+                    "offset": {"x": 85, "y": 144},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 77, "y": 137},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "left": {
+                    "offset": {"x": 85, "y": 137},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 77, "y": 137},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "bottom": {
+                    "offset": {"x": 85, "y": 153},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 90
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "38",
+              "name": "Torso-Armor--C3",
+              "position": {"x": 1, "y": -10, "z": 23},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -1, "y": 13, "z": -8},
+                "stretch": {"x": 0.9625, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 12, "y": 4, "z": 2},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 87, "y": 147},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 83, "y": 139},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "left": {
+                    "offset": {"x": 87, "y": 139},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 87, "y": 139},
+                    "mirror": {"x": true, "y": true},
+                    "angle": 270
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "39",
+              "name": "Torso-Armor--C4",
+              "position": {"x": 0, "y": -1.5, "z": -15},
+              "orientation": {"x": -0.38268, "y": 0, "z": 0, "w": 0.92388},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0, "z": 0},
+                "stretch": {"x": 0.975, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 16, "y": 6, "z": 7},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 47, "y": 136},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "right": {
+                    "offset": {"x": 53, "y": 148},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 47, "y": 136},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "left": {
+                    "offset": {"x": 53, "y": 134},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "top": {
+                    "offset": {"x": 46, "y": 136},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  },
+                  "bottom": {
+                    "offset": {"x": 46, "y": 136},
+                    "mirror": {"x": false, "y": true},
+                    "angle": 90
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "name": "Calf-Right",
+      "position": {"x": 9.18078, "y": 12.53417, "z": 10.40994},
+      "orientation": {"x": 0.30071, "y": 0, "z": 0, "w": 0.95372},
+      "shape": {
+        "type": "none",
+        "offset": {"x": 0, "y": 0, "z": 0},
+        "stretch": {"x": 0, "y": 0, "z": 0},
+        "settings": {
+          "isPiece": true
+        },
+        "textureLayout": {},
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": false,
+        "shadingMode": "flat"
+      },
+      "children": [
+        {
+          "id": "41",
+          "name": "Calf-Right-Armor",
+          "position": {"x": 0, "y": 2, "z": 0.25},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": -5.5, "y": -0.60375, "z": -0.64267},
+            "stretch": {"x": 1, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 0, "y": 24, "z": 10}
+            },
+            "textureLayout": {
+              "right": {
+                "offset": {"x": 110, "y": 184},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              },
+              "left": {
+                "offset": {"x": 120, "y": 184},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "42",
+              "name": "Calf-Right-Armor--C1",
+              "position": {"x": 5.5, "y": 0, "z": 0},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 5.5, "y": 0, "z": 0},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 24, "z": 10},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 120, "y": 184},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 110, "y": 184},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "43",
+              "name": "Calf-Right-Armor--C2",
+              "position": {"x": 5.5, "y": 0, "z": 0},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0, "z": 5},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 11, "y": 24, "z": 0},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 131, "y": 184},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 120, "y": 184},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "44",
+              "name": "Calf-Right-Armor--C3",
+              "position": {"x": 5.5, "y": 0, "z": 0},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0, "z": -5},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 11, "y": 24, "z": 0},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 99, "y": 184},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 110, "y": 184},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "45",
+      "name": "Calf-Left",
+      "position": {"x": -9.18078, "y": 12.53417, "z": 10.40994},
+      "orientation": {"x": 0.30071, "y": 0, "z": 0, "w": 0.95372},
+      "shape": {
+        "type": "none",
+        "offset": {"x": 0, "y": 0, "z": 0},
+        "stretch": {"x": 0, "y": 0, "z": 0},
+        "settings": {
+          "isPiece": true
+        },
+        "textureLayout": {},
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": false,
+        "shadingMode": "flat"
+      },
+      "children": [
+        {
+          "id": "46",
+          "name": "Calf-Left-Armor",
+          "position": {"x": 0, "y": 1, "z": 0.25},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": 5.5, "y": -0.60375, "z": -0.64267},
+            "stretch": {"x": 1, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 0, "y": 24, "z": 10}
+            },
+            "textureLayout": {
+              "right": {
+                "offset": {"x": 110, "y": 184},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              },
+              "left": {
+                "offset": {"x": 120, "y": 184},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          },
+          "children": [
+            {
+              "id": "47",
+              "name": "Calf-Left-Armor--C1",
+              "position": {"x": -5.5, "y": 0, "z": 0},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": -5.5, "y": 0, "z": 0},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 0, "y": 24, "z": 10},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "right": {
+                    "offset": {"x": 120, "y": 184},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "left": {
+                    "offset": {"x": 110, "y": 184},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "48",
+              "name": "Calf-Left-Armor--C2",
+              "position": {"x": -5.5, "y": 0, "z": 0},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0, "z": 5},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 11, "y": 24, "z": 0},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 120, "y": 184},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 131, "y": 184},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            },
+            {
+              "id": "49",
+              "name": "Calf-Left-Armor--C3",
+              "position": {"x": -5.5, "y": 0, "z": 0},
+              "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+              "shape": {
+                "type": "box",
+                "offset": {"x": 0, "y": 0, "z": -5},
+                "stretch": {"x": 1, "y": 1, "z": 1},
+                "settings": {
+                  "isPiece": false,
+                  "size": {"x": 11, "y": 24, "z": 0},
+                  "isStaticBox": true
+                },
+                "textureLayout": {
+                  "back": {
+                    "offset": {"x": 110, "y": 184},
+                    "mirror": {"x": true, "y": false},
+                    "angle": 0
+                  },
+                  "front": {
+                    "offset": {"x": 99, "y": 184},
+                    "mirror": {"x": false, "y": false},
+                    "angle": 0
+                  }
+                },
+                "unwrapMode": "custom",
+                "visible": true,
+                "doubleSided": false,
+                "shadingMode": "flat"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "50",
+      "name": "Jaw",
+      "position": {"x": 0, "y": 94.62686, "z": -49.02018},
+      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+      "shape": {
+        "type": "none",
+        "offset": {"x": 0, "y": 0, "z": 0},
+        "stretch": {"x": 0, "y": 0, "z": 0},
+        "settings": {
+          "isPiece": true
+        },
+        "textureLayout": {},
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": false,
+        "shadingMode": "flat"
+      },
+      "children": [
+        {
+          "id": "51",
+          "name": "Jaw-Armor",
+          "position": {"x": -0.04884, "y": -3.11436, "z": -1.38982},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": 0, "y": 1.86436, "z": 2.43018},
+            "stretch": {"x": 1, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 19, "y": 6, "z": 20}
+            },
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 37, "y": 66},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "right": {
+                "offset": {"x": 35, "y": 66},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              },
+              "left": {
+                "offset": {"x": 36, "y": 66},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              },
+              "bottom": {
+                "offset": {"x": 74, "y": 85},
+                "mirror": {"x": false, "y": true},
+                "angle": 270
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          }
+        }
+      ]
+    },
+    {
+      "id": "52",
+      "name": "Leg-Left",
+      "position": {"x": -9.18078, "y": 32.04628, "z": 10.35952},
+      "orientation": {"x": -0.32144, "y": 0, "z": 0, "w": 0.94693},
+      "shape": {
+        "type": "none",
+        "offset": {"x": 0, "y": 0, "z": 0},
+        "stretch": {"x": 0, "y": 0, "z": 0},
+        "settings": {
+          "isPiece": true
+        },
+        "textureLayout": {},
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": false,
+        "shadingMode": "flat"
+      },
+      "children": [
+        {
+          "id": "53",
+          "name": "Leg-Left-Armor",
+          "position": {"x": 0, "y": 8.52266, "z": 0.64305},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": 0.4602, "y": -8.07016, "z": -0.63131},
+            "stretch": {"x": 1, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 12, "y": 29, "z": 12}
+            },
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 135, "y": 184},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              },
+              "right": {
+                "offset": {"x": 159, "y": 184},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "front": {
+                "offset": {"x": 159, "y": 184},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              },
+              "left": {
+                "offset": {"x": 147, "y": 184},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          }
+        }
+      ]
+    },
+    {
+      "id": "54",
+      "name": "Leg-Right",
+      "position": {"x": 9.18078, "y": 32.04628, "z": 10.35952},
+      "orientation": {"x": -0.32144, "y": 0, "z": 0, "w": 0.94693},
+      "shape": {
+        "type": "none",
+        "offset": {"x": 0, "y": 0, "z": 0},
+        "stretch": {"x": 0, "y": 0, "z": 0},
+        "settings": {
+          "isPiece": true
+        },
+        "textureLayout": {},
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": false,
+        "shadingMode": "flat"
+      },
+      "children": [
+        {
+          "id": "55",
+          "name": "Leg-Right-Armor",
+          "position": {"x": 0, "y": 8.52266, "z": 0.64305},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": -0.4602, "y": -8.07016, "z": -0.63131},
+            "stretch": {"x": 1, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 12, "y": 29, "z": 12}
+            },
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 147, "y": 184},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "right": {
+                "offset": {"x": 159, "y": 184},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "front": {
+                "offset": {"x": 171, "y": 184},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "left": {
+                "offset": {"x": 147, "y": 184},
+                "mirror": {"x": false, "y": false},
+                "angle": 0
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          }
+        }
+      ]
+    },
+    {
+      "id": "56",
+      "name": "Saddle",
+      "position": {"x": -0.63361, "y": 18.3596, "z": 4.48564},
+      "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+      "shape": {
+        "type": "box",
+        "offset": {"x": 0, "y": -0.36091, "z": -0.08483},
+        "stretch": {"x": 0.9625, "y": 1, "z": 1},
+        "settings": {
+          "isPiece": false,
+          "size": {"x": 20, "y": 3, "z": 24}
+        },
+        "textureLayout": {
+          "back": {
+            "offset": {"x": 53, "y": 134},
+            "mirror": {"x": false, "y": true},
+            "angle": 90
+          },
+          "right": {
+            "offset": {"x": 77, "y": 134},
+            "mirror": {"x": true, "y": false},
+            "angle": 0
+          },
+          "front": {
+            "offset": {"x": 75, "y": 134},
+            "mirror": {"x": false, "y": true},
+            "angle": 90
+          },
+          "left": {
+            "offset": {"x": 53, "y": 151},
+            "mirror": {"x": false, "y": false},
+            "angle": 0
+          },
+          "top": {
+            "offset": {"x": 77, "y": 134},
+            "mirror": {"x": true, "y": true},
+            "angle": 270
+          },
+          "bottom": {
+            "offset": {"x": 53, "y": 134},
+            "mirror": {"x": false, "y": true},
+            "angle": 90
+          }
+        },
+        "unwrapMode": "custom",
+        "visible": true,
+        "doubleSided": false,
+        "shadingMode": "flat"
+      },
+      "children": [
+        {
+          "id": "57",
+          "name": "Torso-Armor--C1",
+          "position": {"x": 1, "y": -13.5, "z": -7},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": -1, "y": 14, "z": -6},
+            "stretch": {"x": 0.9625, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 16, "y": 2, "z": 2},
+              "isStaticBox": true
+            },
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 53, "y": 137},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              },
+              "right": {
+                "offset": {"x": 55, "y": 137},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "front": {
+                "offset": {"x": 53, "y": 137},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              },
+              "left": {
+                "offset": {"x": 55, "y": 151},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "top": {
+                "offset": {"x": 55, "y": 137},
+                "mirror": {"x": true, "y": true},
+                "angle": 270
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          }
+        },
+        {
+          "id": "58",
+          "name": "Torso-Armor--C2",
+          "position": {"x": 0, "y": 1.5, "z": 13},
+          "orientation": {"x": -0.32144, "y": 0, "z": 0, "w": 0.94693},
+          "shape": {
+            "type": "box",
+            "offset": {"x": 0, "y": -2, "z": -1},
+            "stretch": {"x": 0.9625, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 16, "y": 8, "z": 8},
+              "isStaticBox": true
+            },
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 77, "y": 137},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              },
+              "right": {
+                "offset": {"x": 85, "y": 144},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "front": {
+                "offset": {"x": 77, "y": 137},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              },
+              "left": {
+                "offset": {"x": 85, "y": 137},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "top": {
+                "offset": {"x": 77, "y": 137},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              },
+              "bottom": {
+                "offset": {"x": 85, "y": 153},
+                "mirror": {"x": true, "y": false},
+                "angle": 90
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          }
+        },
+        {
+          "id": "59",
+          "name": "Torso-Armor--C3",
+          "position": {"x": 1, "y": -10, "z": 23},
+          "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
+          "shape": {
+            "type": "box",
+            "offset": {"x": -1, "y": 13, "z": -8},
+            "stretch": {"x": 0.9625, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 12, "y": 4, "z": 2},
+              "isStaticBox": true
+            },
+            "textureLayout": {
+              "right": {
+                "offset": {"x": 87, "y": 147},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "front": {
+                "offset": {"x": 83, "y": 139},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              },
+              "left": {
+                "offset": {"x": 87, "y": 139},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "top": {
+                "offset": {"x": 87, "y": 139},
+                "mirror": {"x": true, "y": true},
+                "angle": 270
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          }
+        },
+        {
+          "id": "60",
+          "name": "Torso-Armor--C4",
+          "position": {"x": 0, "y": -1.5, "z": -15},
+          "orientation": {"x": -0.38268, "y": 0, "z": 0, "w": 0.92388},
+          "shape": {
+            "type": "box",
+            "offset": {"x": 0, "y": 0, "z": 0},
+            "stretch": {"x": 0.975, "y": 1, "z": 1},
+            "settings": {
+              "isPiece": false,
+              "size": {"x": 16, "y": 6, "z": 7},
+              "isStaticBox": true
+            },
+            "textureLayout": {
+              "back": {
+                "offset": {"x": 47, "y": 136},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              },
+              "right": {
+                "offset": {"x": 53, "y": 148},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "front": {
+                "offset": {"x": 47, "y": 136},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              },
+              "left": {
+                "offset": {"x": 53, "y": 134},
+                "mirror": {"x": true, "y": false},
+                "angle": 0
+              },
+              "top": {
+                "offset": {"x": 46, "y": 136},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              },
+              "bottom": {
+                "offset": {"x": 46, "y": 136},
+                "mirror": {"x": false, "y": true},
+                "angle": 90
+              }
+            },
+            "unwrapMode": "custom",
+            "visible": true,
+            "doubleSided": false,
+            "shadingMode": "flat"
+          }
+        }
+      ]
+    }
+  ],
+  "format": "prop",
+  "lod": "auto"
+}
