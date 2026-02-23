@@ -702,34 +702,6 @@
       ],
       "shapeVisible": [],
       "shapeUvOffset": []
-    },
-    "root": {
-      "position": [
-        {
-          "time": 0,
-          "delta": {"x": 0, "y": -4, "z": 0},
-          "interpolationType": "linear"
-        },
-        {
-          "time": 29,
-          "delta": {"x": 0, "y": -4.23, "z": 0},
-          "interpolationType": "linear"
-        },
-        {
-          "time": 44,
-          "delta": {"x": 0, "y": -2.07, "z": 0},
-          "interpolationType": "linear"
-        },
-        {
-          "time": 60,
-          "delta": {"x": 0, "y": 0, "z": 0},
-          "interpolationType": "linear"
-        }
-      ],
-      "orientation": [],
-      "shapeStretch": [],
-      "shapeVisible": [],
-      "shapeUvOffset": []
     }
   }
 }
