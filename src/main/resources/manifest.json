@@ -1,7 +1,7 @@
 {
     "Group": "Ahrenal",
     "Name": "Chocobos",
-    "Version": "0.0.6",
+    "Version": "0.0.7",
     "Description": "",
     "Authors": [
         
@@ -22,5 +22,6 @@
     "Main": "org.mounts.plugin.ChocoboPlugin",
     "SubPlugins": [
         
-    ]
+    ],
+    "ServerVersion": "2026.02.18-f3b8fff95"
 }

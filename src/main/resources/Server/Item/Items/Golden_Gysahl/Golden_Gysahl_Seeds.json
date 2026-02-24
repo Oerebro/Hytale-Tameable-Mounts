@@ -34,12 +34,12 @@
     "Input": [
       {
         "ItemId": "Ingredient_Life_Essence",
-        "Quantity": 2
+        "Quantity": 40
       }
     ],
     "Output": [
       {
-        "ItemId": "Plant_Seeds_Lettuce",
+        "ItemId": "Golden_Gysahl_Seeds",
         "Quantity": 1
       }
     ],

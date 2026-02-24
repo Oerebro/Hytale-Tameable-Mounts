@@ -214,6 +214,7 @@ public class MountInitSystem extends TickingSystem<EntityStore> {
     }
 
     //doesnt work, but I left it in in case I figure out a way to do it
+    /*
     public static Model createScaledTintedModel(
             @Nonnull ModelAsset modelAsset, float scale, @Nullable Map<String, String> randomAttachmentIds, @Nullable Box overrideBoundingBox, boolean staticModel, String gradientSet, String gradientId
     ) {
@@ -310,7 +311,9 @@ public class MountInitSystem extends TickingSystem<EntityStore> {
         }
     }
 
+
     //doesnt work, but I left it in in case I figure out a way to do it
+
     public static void setRandomColor(Ref<EntityStore> ref, Store<EntityStore> store){
         NPCEntity npc = store.getComponent(ref,NPCEntity.getComponentType());
         Role role = npc.getRole();
@@ -336,7 +339,7 @@ public class MountInitSystem extends TickingSystem<EntityStore> {
         store.putComponent(ref, ModelComponent.getComponentType(), new ModelComponent(newModel));
         System.out.println("Color should be: "+color);
     }
-
+    */
     public static void requestMountInit(
             @Nonnull Ref<EntityStore> ref,
             @Nonnull ComponentAccessor<EntityStore> store
